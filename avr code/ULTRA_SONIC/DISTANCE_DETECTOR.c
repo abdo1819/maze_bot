@@ -26,9 +26,8 @@ void start( uint8_t trig)
 	{
 		TCCR1B=0;
 
-		
-		MCUCSR|=(1<<ISC2);//rising edge
-		GICR|=(1<<INT2);//enable int2
+		MCUCSR|=(1<<ISC2);	//rising edge
+		GICR|=(1<<INT2);	//enable int2
 		DDRD|=(1<<trig);
 		trig_val=trig;//pass trig to trig signal function
 		flag=1;
@@ -81,6 +80,7 @@ void TRIG_SIGNAL( )
 		TCCR1B=0;
 
 }
+
 ISR(INT1_vect)
 {
 	if (flag==1){

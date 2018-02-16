@@ -5,6 +5,10 @@
  * Author : HMS
  */ 
 
+
+
+
+
 #include <avr/io.h>
  
 #include <stdio.h>
@@ -15,10 +19,11 @@
 #include "H_BRIDGE.h"
 int main(void)
 { uint16_t RIGHT=0;
-	uint16_t LEFT=0;
+  uint16_t LEFT=0;
 	DDRD=0;
+	
 	PORTD|=1<<PD3;
-	char buff[50]="010";
+	//char buff[50]="010";
 	 START_MOTORs(PB0,PB1,PD0,PD1);
 	//LCD_START();
     while (1) 
@@ -34,7 +39,6 @@ int main(void)
 	//	LCD_GoTo_XY(1,0);
 		//sprintf(buff,"%u",LEFT);
 		
-	  
 	//	DISP_WORD(buff);
 		 
 		//  LCD_ClearScreen();
