@@ -1,0 +1,492 @@
+
+robot.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000272  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000002  00800060  00000272  00000306  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000004  00800062  00800062  00000308  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00000308  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000338  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000068  00000000  00000000  00000374  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000008e2  00000000  00000000  000003dc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000711  00000000  00000000  00000cbe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   0000053a  00000000  00000000  000013cf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000000d4  00000000  00000000  0000190c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000039d  00000000  00000000  000019e0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000016f  00000000  00000000  00001d7d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000048  00000000  00000000  00001eec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	12 c0       	rjmp	.+36     	; 0x26 <__ctors_end>
+   2:	a2 c0       	rjmp	.+324    	; 0x148 <__vector_1>
+   4:	d3 c0       	rjmp	.+422    	; 0x1ac <__vector_2>
+   6:	2a c0       	rjmp	.+84     	; 0x5c <__bad_interrupt>
+   8:	29 c0       	rjmp	.+82     	; 0x5c <__bad_interrupt>
+   a:	28 c0       	rjmp	.+80     	; 0x5c <__bad_interrupt>
+   c:	27 c0       	rjmp	.+78     	; 0x5c <__bad_interrupt>
+   e:	26 c0       	rjmp	.+76     	; 0x5c <__bad_interrupt>
+  10:	ff c0       	rjmp	.+510    	; 0x210 <__vector_8>
+  12:	24 c0       	rjmp	.+72     	; 0x5c <__bad_interrupt>
+  14:	23 c0       	rjmp	.+70     	; 0x5c <__bad_interrupt>
+  16:	22 c0       	rjmp	.+68     	; 0x5c <__bad_interrupt>
+  18:	21 c0       	rjmp	.+66     	; 0x5c <__bad_interrupt>
+  1a:	20 c0       	rjmp	.+64     	; 0x5c <__bad_interrupt>
+  1c:	1f c0       	rjmp	.+62     	; 0x5c <__bad_interrupt>
+  1e:	1e c0       	rjmp	.+60     	; 0x5c <__bad_interrupt>
+  20:	1d c0       	rjmp	.+58     	; 0x5c <__bad_interrupt>
+  22:	1c c0       	rjmp	.+56     	; 0x5c <__bad_interrupt>
+  24:	1b c0       	rjmp	.+54     	; 0x5c <__bad_interrupt>
+
+00000026 <__ctors_end>:
+  26:	11 24       	eor	r1, r1
+  28:	1f be       	out	0x3f, r1	; 63
+  2a:	cf e5       	ldi	r28, 0x5F	; 95
+  2c:	d4 e0       	ldi	r29, 0x04	; 4
+  2e:	de bf       	out	0x3e, r29	; 62
+  30:	cd bf       	out	0x3d, r28	; 61
+
+00000032 <__do_copy_data>:
+  32:	10 e0       	ldi	r17, 0x00	; 0
+  34:	a0 e6       	ldi	r26, 0x60	; 96
+  36:	b0 e0       	ldi	r27, 0x00	; 0
+  38:	e2 e7       	ldi	r30, 0x72	; 114
+  3a:	f2 e0       	ldi	r31, 0x02	; 2
+  3c:	02 c0       	rjmp	.+4      	; 0x42 <__SREG__+0x3>
+  3e:	05 90       	lpm	r0, Z+
+  40:	0d 92       	st	X+, r0
+  42:	a2 36       	cpi	r26, 0x62	; 98
+  44:	b1 07       	cpc	r27, r17
+  46:	d9 f7       	brne	.-10     	; 0x3e <__SP_H__>
+
+00000048 <__do_clear_bss>:
+  48:	20 e0       	ldi	r18, 0x00	; 0
+  4a:	a2 e6       	ldi	r26, 0x62	; 98
+  4c:	b0 e0       	ldi	r27, 0x00	; 0
+  4e:	01 c0       	rjmp	.+2      	; 0x52 <.do_clear_bss_start>
+
+00000050 <.do_clear_bss_loop>:
+  50:	1d 92       	st	X+, r1
+
+00000052 <.do_clear_bss_start>:
+  52:	a6 36       	cpi	r26, 0x66	; 102
+  54:	b2 07       	cpc	r27, r18
+  56:	e1 f7       	brne	.-8      	; 0x50 <.do_clear_bss_loop>
+  58:	fa d0       	rcall	.+500    	; 0x24e <main>
+  5a:	09 c1       	rjmp	.+530    	; 0x26e <_exit>
+
+0000005c <__bad_interrupt>:
+  5c:	d1 cf       	rjmp	.-94     	; 0x0 <__vectors>
+
+0000005e <start>:
+void start( uint8_t trig)
+{  //init trig position , interrupt type and interrupt pin
+	 
+	
+	// determine the interrupt pin that will be used by knowing which trig will be send
+	if (trig==2)//case of int0
+  5e:	82 30       	cpi	r24, 0x02	; 2
+  60:	61 f4       	brne	.+24     	; 0x7a <start+0x1c>
+	{
+		TCCR1B=0;
+  62:	1e bc       	out	0x2e, r1	; 46
+		MCUCR|=(1<<ISC00);	//rising edge   ///???????
+  64:	85 b7       	in	r24, 0x35	; 53
+  66:	81 60       	ori	r24, 0x01	; 1
+  68:	85 bf       	out	0x35, r24	; 53
+		GICR|=(1<<INT0);	//enable int0
+  6a:	8b b7       	in	r24, 0x3b	; 59
+  6c:	80 64       	ori	r24, 0x40	; 64
+  6e:	8b bf       	out	0x3b, r24	; 59
+		DDRD|=(1<<trig);
+  70:	8a 9a       	sbi	0x11, 2	; 17
+		flag=1;
+  72:	81 e0       	ldi	r24, 0x01	; 1
+  74:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__data_start>
+  78:	16 c0       	rjmp	.+44     	; 0xa6 <start+0x48>
+	}
+	else  //case int1
+	 {
+		 TCCR1B=0;
+  7a:	1e bc       	out	0x2e, r1	; 46
+		 MCUCR|=(1<<ISC10);
+  7c:	95 b7       	in	r25, 0x35	; 53
+  7e:	94 60       	ori	r25, 0x04	; 4
+  80:	95 bf       	out	0x35, r25	; 53
+		 GICR|=(1<<INT1);
+  82:	9b b7       	in	r25, 0x3b	; 59
+  84:	90 68       	ori	r25, 0x80	; 128
+  86:	9b bf       	out	0x3b, r25	; 59
+		 DDRD|=(1<<trig);
+  88:	41 b3       	in	r20, 0x11	; 17
+  8a:	21 e0       	ldi	r18, 0x01	; 1
+  8c:	30 e0       	ldi	r19, 0x00	; 0
+  8e:	b9 01       	movw	r22, r18
+  90:	02 c0       	rjmp	.+4      	; 0x96 <start+0x38>
+  92:	66 0f       	add	r22, r22
+  94:	77 1f       	adc	r23, r23
+  96:	8a 95       	dec	r24
+  98:	e2 f7       	brpl	.-8      	; 0x92 <start+0x34>
+  9a:	cb 01       	movw	r24, r22
+  9c:	84 2b       	or	r24, r20
+  9e:	81 bb       	out	0x11, r24	; 17
+		 flag=1;
+  a0:	81 e0       	ldi	r24, 0x01	; 1
+  a2:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__data_start>
+	
+	}
+	sei();//enable global interrupt
+  a6:	78 94       	sei
+  a8:	08 95       	ret
+
+000000aa <TRIG_SIGNAL>:
+ 	return secs;//CONVERSION MISSED XD
+}
+void TRIG_SIGNAL( )
+{
+	//send trig pulse
+	PORTD|= (1<<echo_pulse);
+  aa:	42 b3       	in	r20, 0x12	; 18
+  ac:	81 e0       	ldi	r24, 0x01	; 1
+  ae:	90 e0       	ldi	r25, 0x00	; 0
+  b0:	9c 01       	movw	r18, r24
+  b2:	00 90 61 00 	lds	r0, 0x0061	; 0x800061 <echo_pulse>
+  b6:	02 c0       	rjmp	.+4      	; 0xbc <TRIG_SIGNAL+0x12>
+  b8:	22 0f       	add	r18, r18
+  ba:	33 1f       	adc	r19, r19
+  bc:	0a 94       	dec	r0
+  be:	e2 f7       	brpl	.-8      	; 0xb8 <TRIG_SIGNAL+0xe>
+  c0:	24 2b       	or	r18, r20
+  c2:	22 bb       	out	0x12, r18	; 18
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c4:	23 e0       	ldi	r18, 0x03	; 3
+  c6:	2a 95       	dec	r18
+  c8:	f1 f7       	brne	.-4      	; 0xc6 <TRIG_SIGNAL+0x1c>
+  ca:	00 00       	nop
+	_delay_us(10);
+	PORTD&= ~(1<<echo_pulse);
+  cc:	22 b3       	in	r18, 0x12	; 18
+  ce:	00 90 61 00 	lds	r0, 0x0061	; 0x800061 <echo_pulse>
+  d2:	02 c0       	rjmp	.+4      	; 0xd8 <TRIG_SIGNAL+0x2e>
+  d4:	88 0f       	add	r24, r24
+  d6:	99 1f       	adc	r25, r25
+  d8:	0a 94       	dec	r0
+  da:	e2 f7       	brpl	.-8      	; 0xd4 <TRIG_SIGNAL+0x2a>
+  dc:	80 95       	com	r24
+  de:	82 23       	and	r24, r18
+  e0:	82 bb       	out	0x12, r24	; 18
+  e2:	8a ef       	ldi	r24, 0xFA	; 250
+  e4:	8a 95       	dec	r24
+  e6:	f1 f7       	brne	.-4      	; 0xe4 <TRIG_SIGNAL+0x3a>
+	_delay_us(750);
+		TCCR1B=0;
+  e8:	1e bc       	out	0x2e, r1	; 46
+  ea:	08 95       	ret
+
+000000ec <MEASURE_IN_CM>:
+	}
+	sei();//enable global interrupt
+}
+ uint16_t MEASURE_IN_CM()
+{
+	TRIG_SIGNAL();
+  ec:	de df       	rcall	.-68     	; 0xaa <TRIG_SIGNAL>
+	//timer 1 no prescale lowest time =1/million=.001msec and max =1/million*2^16=65ms
+	//lowest time from hc sr04 =150 u sec=.15 m sec ****data sheet****
+	//max time from hc sr04 =25 m sec or 18 m sec(will not reach it)****data sheet****
+	// no obstacle time= 38 m sec
+ while((flag==0)&&(secs==0)){
+  ee:	06 c0       	rjmp	.+12     	; 0xfc <MEASURE_IN_CM+0x10>
+	 
+	 if (over_flow>=1)
+  f0:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__data_end>
+  f4:	90 91 63 00 	lds	r25, 0x0063	; 0x800063 <__data_end+0x1>
+  f8:	89 2b       	or	r24, r25
+  fa:	19 f5       	brne	.+70     	; 0x142 <MEASURE_IN_CM+0x56>
+	TRIG_SIGNAL();
+	//timer 1 no prescale lowest time =1/million=.001msec and max =1/million*2^16=65ms
+	//lowest time from hc sr04 =150 u sec=.15 m sec ****data sheet****
+	//max time from hc sr04 =25 m sec or 18 m sec(will not reach it)****data sheet****
+	// no obstacle time= 38 m sec
+ while((flag==0)&&(secs==0)){
+  fc:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
+ 100:	81 11       	cpse	r24, r1
+ 102:	06 c0       	rjmp	.+12     	; 0x110 <MEASURE_IN_CM+0x24>
+ 104:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <secs>
+ 108:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <secs+0x1>
+ 10c:	89 2b       	or	r24, r25
+ 10e:	81 f3       	breq	.-32     	; 0xf0 <MEASURE_IN_CM+0x4>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 110:	83 ed       	ldi	r24, 0xD3	; 211
+ 112:	90 e3       	ldi	r25, 0x30	; 48
+ 114:	01 97       	sbiw	r24, 0x01	; 1
+ 116:	f1 f7       	brne	.-4      	; 0x114 <MEASURE_IN_CM+0x28>
+ 118:	00 c0       	rjmp	.+0      	; 0x11a <MEASURE_IN_CM+0x2e>
+ 11a:	00 00       	nop
+		 return 0;//in case of wrong connection or any problems (TIMER VALUE WIll NOT OVER FLOW ) ZERO RETURN IN CASE OF OVER FLOW
+		 }
+		 
+	 }
+	 _delay_ms(50);
+	TCCR1B=0;
+ 11c:	1e bc       	out	0x2e, r1	; 46
+	DDRD&=~(1<<echo_pulse);
+ 11e:	21 b3       	in	r18, 0x11	; 17
+ 120:	81 e0       	ldi	r24, 0x01	; 1
+ 122:	90 e0       	ldi	r25, 0x00	; 0
+ 124:	00 90 61 00 	lds	r0, 0x0061	; 0x800061 <echo_pulse>
+ 128:	02 c0       	rjmp	.+4      	; 0x12e <MEASURE_IN_CM+0x42>
+ 12a:	88 0f       	add	r24, r24
+ 12c:	99 1f       	adc	r25, r25
+ 12e:	0a 94       	dec	r0
+ 130:	e2 f7       	brpl	.-8      	; 0x12a <MEASURE_IN_CM+0x3e>
+ 132:	80 95       	com	r24
+ 134:	82 23       	and	r24, r18
+ 136:	81 bb       	out	0x11, r24	; 17
+
+ 	return secs;//CONVERSION MISSED XD
+ 138:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <secs>
+ 13c:	90 91 65 00 	lds	r25, 0x0065	; 0x800065 <secs+0x1>
+ 140:	08 95       	ret
+ while((flag==0)&&(secs==0)){
+	 
+	 if (over_flow>=1)
+	 { 
+		  
+		 return 0;//in case of wrong connection or any problems (TIMER VALUE WIll NOT OVER FLOW ) ZERO RETURN IN CASE OF OVER FLOW
+ 142:	80 e0       	ldi	r24, 0x00	; 0
+ 144:	90 e0       	ldi	r25, 0x00	; 0
+	 _delay_ms(50);
+	TCCR1B=0;
+	DDRD&=~(1<<echo_pulse);
+
+ 	return secs;//CONVERSION MISSED XD
+}
+ 146:	08 95       	ret
+
+00000148 <__vector_1>:
+	_delay_us(750);
+		TCCR1B=0;
+
+}
+ISR(INT0_vect)
+{
+ 148:	1f 92       	push	r1
+ 14a:	0f 92       	push	r0
+ 14c:	0f b6       	in	r0, 0x3f	; 63
+ 14e:	0f 92       	push	r0
+ 150:	11 24       	eor	r1, r1
+ 152:	8f 93       	push	r24
+ 154:	9f 93       	push	r25
+	if (flag==1){
+ 156:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
+ 15a:	81 30       	cpi	r24, 0x01	; 1
+ 15c:	79 f4       	brne	.+30     	; 0x17c <__vector_1+0x34>
+	TCCR1B|=(1<<CS10);
+ 15e:	8e b5       	in	r24, 0x2e	; 46
+ 160:	81 60       	ori	r24, 0x01	; 1
+ 162:	8e bd       	out	0x2e, r24	; 46
+	TIMSK|=(1<<TOIE1);
+ 164:	89 b7       	in	r24, 0x39	; 57
+ 166:	84 60       	ori	r24, 0x04	; 4
+ 168:	89 bf       	out	0x39, r24	; 57
+	TCNT1=0;
+ 16a:	1d bc       	out	0x2d, r1	; 45
+ 16c:	1c bc       	out	0x2c, r1	; 44
+	flag=0;
+ 16e:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__data_start>
+	secs=0;
+ 172:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <secs+0x1>
+ 176:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <secs>
+ 17a:	11 c0       	rjmp	.+34     	; 0x19e <__vector_1+0x56>
+	}
+	else
+	 {   secs=TCNT1;
+ 17c:	8c b5       	in	r24, 0x2c	; 44
+ 17e:	9d b5       	in	r25, 0x2d	; 45
+ 180:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <secs+0x1>
+ 184:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <secs>
+		 TCCR1B=0;
+ 188:	1e bc       	out	0x2e, r1	; 46
+		 flag=1;
+ 18a:	81 e0       	ldi	r24, 0x01	; 1
+ 18c:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__data_start>
+	     over_flow=0;
+ 190:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <__data_end+0x1>
+ 194:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__data_end>
+		 TCNT1=0;
+ 198:	1d bc       	out	0x2d, r1	; 45
+ 19a:	1c bc       	out	0x2c, r1	; 44
+		 TCCR1B=0;
+ 19c:	1e bc       	out	0x2e, r1	; 46
+	}
+}
+ 19e:	9f 91       	pop	r25
+ 1a0:	8f 91       	pop	r24
+ 1a2:	0f 90       	pop	r0
+ 1a4:	0f be       	out	0x3f, r0	; 63
+ 1a6:	0f 90       	pop	r0
+ 1a8:	1f 90       	pop	r1
+ 1aa:	18 95       	reti
+
+000001ac <__vector_2>:
+ISR(INT1_vect)
+{
+ 1ac:	1f 92       	push	r1
+ 1ae:	0f 92       	push	r0
+ 1b0:	0f b6       	in	r0, 0x3f	; 63
+ 1b2:	0f 92       	push	r0
+ 1b4:	11 24       	eor	r1, r1
+ 1b6:	8f 93       	push	r24
+ 1b8:	9f 93       	push	r25
+	if (flag==1){
+ 1ba:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
+ 1be:	81 30       	cpi	r24, 0x01	; 1
+ 1c0:	79 f4       	brne	.+30     	; 0x1e0 <__vector_2+0x34>
+		TCCR1B|=(1<<CS10);
+ 1c2:	8e b5       	in	r24, 0x2e	; 46
+ 1c4:	81 60       	ori	r24, 0x01	; 1
+ 1c6:	8e bd       	out	0x2e, r24	; 46
+		TIMSK|=(1<<TOIE1);
+ 1c8:	89 b7       	in	r24, 0x39	; 57
+ 1ca:	84 60       	ori	r24, 0x04	; 4
+ 1cc:	89 bf       	out	0x39, r24	; 57
+		TCNT1=0;
+ 1ce:	1d bc       	out	0x2d, r1	; 45
+ 1d0:	1c bc       	out	0x2c, r1	; 44
+		flag=0;
+ 1d2:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__data_start>
+		secs=0;
+ 1d6:	10 92 65 00 	sts	0x0065, r1	; 0x800065 <secs+0x1>
+ 1da:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <secs>
+ 1de:	11 c0       	rjmp	.+34     	; 0x202 <__vector_2+0x56>
+	}
+	else
+	{   secs=TCNT1;
+ 1e0:	8c b5       	in	r24, 0x2c	; 44
+ 1e2:	9d b5       	in	r25, 0x2d	; 45
+ 1e4:	90 93 65 00 	sts	0x0065, r25	; 0x800065 <secs+0x1>
+ 1e8:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <secs>
+		TCCR1B=0;
+ 1ec:	1e bc       	out	0x2e, r1	; 46
+		flag=1;
+ 1ee:	81 e0       	ldi	r24, 0x01	; 1
+ 1f0:	80 93 60 00 	sts	0x0060, r24	; 0x800060 <__data_start>
+		over_flow=0;
+ 1f4:	10 92 63 00 	sts	0x0063, r1	; 0x800063 <__data_end+0x1>
+ 1f8:	10 92 62 00 	sts	0x0062, r1	; 0x800062 <__data_end>
+		TCNT1=0;
+ 1fc:	1d bc       	out	0x2d, r1	; 45
+ 1fe:	1c bc       	out	0x2c, r1	; 44
+		TCCR1B=0;
+ 200:	1e bc       	out	0x2e, r1	; 46
+	}
+}
+ 202:	9f 91       	pop	r25
+ 204:	8f 91       	pop	r24
+ 206:	0f 90       	pop	r0
+ 208:	0f be       	out	0x3f, r0	; 63
+ 20a:	0f 90       	pop	r0
+ 20c:	1f 90       	pop	r1
+ 20e:	18 95       	reti
+
+00000210 <__vector_8>:
+ISR(TIMER1_OVF_vect)
+{
+ 210:	1f 92       	push	r1
+ 212:	0f 92       	push	r0
+ 214:	0f b6       	in	r0, 0x3f	; 63
+ 216:	0f 92       	push	r0
+ 218:	11 24       	eor	r1, r1
+ 21a:	8f 93       	push	r24
+ 21c:	9f 93       	push	r25
+	over_flow=over_flow+1;
+ 21e:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <__data_end>
+ 222:	90 91 63 00 	lds	r25, 0x0063	; 0x800063 <__data_end+0x1>
+ 226:	01 96       	adiw	r24, 0x01	; 1
+ 228:	90 93 63 00 	sts	0x0063, r25	; 0x800063 <__data_end+0x1>
+ 22c:	80 93 62 00 	sts	0x0062, r24	; 0x800062 <__data_end>
+	TCNT1=0;
+ 230:	1d bc       	out	0x2d, r1	; 45
+ 232:	1c bc       	out	0x2c, r1	; 44
+	TCCR1B|=(1<<CS10);
+ 234:	8e b5       	in	r24, 0x2e	; 46
+ 236:	81 60       	ori	r24, 0x01	; 1
+ 238:	8e bd       	out	0x2e, r24	; 46
+	//??   DDRA
+	DDRC=0xff;
+ 23a:	8f ef       	ldi	r24, 0xFF	; 255
+ 23c:	84 bb       	out	0x14, r24	; 20
+	PORTC|=(1<<2);//over flow test      //put led
+ 23e:	aa 9a       	sbi	0x15, 2	; 21
+ 240:	9f 91       	pop	r25
+ 242:	8f 91       	pop	r24
+ 244:	0f 90       	pop	r0
+ 246:	0f be       	out	0x3f, r0	; 63
+ 248:	0f 90       	pop	r0
+ 24a:	1f 90       	pop	r1
+ 24c:	18 95       	reti
+
+0000024e <main>:
+int main(void)
+{   
+	uint16_t ultra_scoic_time = 0;
+	
+
+   DDRD = 0;
+ 24e:	11 ba       	out	0x11, r1	; 17
+   DDRD |=(1<<5);
+ 250:	8d 9a       	sbi	0x11, 5	; 17
+   
+     //echo
+   
+    while (1) 
+    {
+	start(3);  //trig	
+ 252:	83 e0       	ldi	r24, 0x03	; 3
+ 254:	04 df       	rcall	.-504    	; 0x5e <start>
+	ultra_scoic_time  = MEASURE_IN_CM();
+ 256:	4a df       	rcall	.-364    	; 0xec <MEASURE_IN_CM>
+	TCCR1B = 0;	
+ 258:	1e bc       	out	0x2e, r1	; 46
+ 25a:	2f e9       	ldi	r18, 0x9F	; 159
+ 25c:	86 e8       	ldi	r24, 0x86	; 134
+ 25e:	91 e0       	ldi	r25, 0x01	; 1
+ 260:	21 50       	subi	r18, 0x01	; 1
+ 262:	80 40       	sbci	r24, 0x00	; 0
+ 264:	90 40       	sbci	r25, 0x00	; 0
+ 266:	e1 f7       	brne	.-8      	; 0x260 <main+0x12>
+ 268:	00 c0       	rjmp	.+0      	; 0x26a <main+0x1c>
+ 26a:	00 00       	nop
+ 26c:	f2 cf       	rjmp	.-28     	; 0x252 <main+0x4>
+
+0000026e <_exit>:
+ 26e:	f8 94       	cli
+
+00000270 <__stop_program>:
+ 270:	ff cf       	rjmp	.-2      	; 0x270 <__stop_program>
