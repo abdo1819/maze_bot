@@ -17,22 +17,19 @@ int main(void)
 {   
 	uint16_t ultra_scoic_time = 0;
 	
-
-   DDRD = 0;
-   DDRD |=(1<<5);
-   
-     //echo
-   
+   DDRD |=(1<<1);   //trig
     while (1) 
     {
-	start(3);  //trig	
+	start(1);  //trig	
 	ultra_scoic_time  = MEASURE_IN_CM();
 	TCCR1B = 0;	
-	_delay_ms(500);
-	}
 	//lcd
-		init();
-		display_int(ultra_scoic_time );
+	init();
+	display_int(ultra_scoic_time);
+	_delay_ms(10);
+	PORTD ^= (1<<1);
+	}
+	
 	return 0 ;
 }
 

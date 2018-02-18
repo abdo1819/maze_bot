@@ -12,23 +12,8 @@
 #define F_CPU 1000000UL
 #include <util/delay.h>
 #include <avr/interrupt.h>
-#define ECHO1 PD2
-#define TRIG1 PD1
-
-#define ECHO2 PD6
-#define TRIG2 PB2
-
-#define ECHO1_reg DDRB
-#define TRIG1_reg DDRD
-
-#define ECHO1_port PORTB
-#define TRIG1_port PORTD
-
-#define ECHO2_reg DDRD
-#define TRIG2_reg DDRD
-
-#define ECHO2_port PORTD
-#define TRIG2_port PORTD
+#define ECHO PD6
+#define TRIG PD4
 
  uint16_t MEASURE_IN_SEC();
  uint16_t MEASURE_IN_CM();

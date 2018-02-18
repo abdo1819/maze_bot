@@ -12,34 +12,28 @@
 #include <string.h>
 volatile int16_t secs=0;
 volatile uint16_t over_flow=0;
-uint8_t trig_val =TRIG1;
+uint8_t trig_val =TRIG;
 
 
 volatile  char flag=1;
- // char buff[50];
+  char buff[50];
 void start( uint8_t trig)
 {  //init trig position , interrupt type and interrupt pin
 	 
-		
+	DDRD=0;
+	PORTD=0;
 	// determine the interrupt pin that will be used by knowing which trig will be send
-	if (trig==1)//case of int2
+	if (trig==6)//case of int2
 	{
-		
-		TCCR1B=0;
-
-		//DDRD &=~(1<<ECHO1)  //interupt input pin
-		MCUCR|=(1<<ISC01) | (1<<ISC00);	//rising edge
-		GICR |=(1<<INT0);	//enable int0
-		
+		DDRB=0;
+		MCUCSR|=(1<<ISC2);//rising edge
+		GICR|=(1<<INT2);//enable int2
 		DDRD|=(1<<trig);
 		trig_val=trig;//pass trig to trig signal function
 		flag=1;
 	}
-	/*
 	else
 	 {
-		 	TCCR1B=0;
-
 		//case of int1
 		 MCUCR|=(1<<ISC10);
 		 GICR|=(1<<INT1);
@@ -47,7 +41,7 @@ void start( uint8_t trig)
 		 trig_val=trig;//pass trig to trig signal function
 		 flag=1;
 	
-	}*/
+	}
 	sei();//enable global interrupt
 }
 
@@ -63,14 +57,12 @@ void start( uint8_t trig)
 	 
 	 if (over_flow>=1)
 	 { 
-		  
+		 
 		 return 0;//in case of wrong connection or any problems (TIMER VALUE WIll NOT OVER FLOW ) ZERO RETURN IN CASE OF OVER FLOW
 		 }
-		 
 	 }
-	 _delay_ms(50);
-	TCCR1B=0;
-	DDRD&=~(1<<trig_val);
+	 
+	
 
  	return secs;//CONVERSION MISSED XD
 }
@@ -81,48 +73,47 @@ void TRIG_SIGNAL( )
 	_delay_us(10);
 	PORTD&=~(1<<trig_val);
 	_delay_us(750);
-		TCCR1B=0;
-
-}
-
-ISR(INT0_vect)
-{
-	if (flag==1){
-		TCCR1B|=(1<<CS10);
-		TIMSK|=(1<<TOIE1);
-		
-		TCNT1=0;
-		flag=0;
-		secs=0;
-	}
-	else
-	{   secs=TCNT1;
-		TCCR1B=0;
-		
-		flag=1;
-		over_flow=0;
-		TCNT1=0;
-		TCCR1B=0;
-	}
+	
 }
 ISR(INT1_vect)
 {
 	if (flag==1){
+	TCCR1B|=(1<<CS10);
+	TIMSK|=(1<<TOIE1);
+	
+	TCNT1=0;
+	flag=0;
+	secs=0;
+	}
+	else
+	 {   secs=TCNT1;
+		 TCCR1B=0;
+		  
+		 flag=1;
+	     over_flow=0;
+		TCNT1=0;
+	}
+}
+ISR(INT2_vect)
+{
+	if (flag==1){
 		TCCR1B|=(1<<CS10);
 		TIMSK|=(1<<TOIE1);
 		
 		TCNT1=0;
 		flag=0;
 		secs=0;
+		MCUCSR&=~(1<<ISC2);
 	}
 	else
 	{   secs=TCNT1;
 		TCCR1B=0;
-		
+		 
 		flag=1;
 		over_flow=0;
 		TCNT1=0;
-		TCCR1B=0;
+		 
+		
 	}
 }
 ISR(TIMER1_OVF_vect)
@@ -130,7 +121,6 @@ ISR(TIMER1_OVF_vect)
 	over_flow=over_flow+1;
 	TCNT1=0;
 	TCCR1B|=(1<<CS10);
-	DDRC |=(1<<4);
-	PORTC^=(1<<4);//over flow test
-	_delay_ms(500);
- }
+	PORTA=~PORTA;//over flow test
+	
+}
