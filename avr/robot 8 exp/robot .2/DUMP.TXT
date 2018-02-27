@@ -1,0 +1,5087 @@
+Loaded 246 symbols
+Program header 0 , 5724 bytes of data at vaddr=0x00000000, paddr=0x00000000, flags=00000005 loading
+Program header 1 , 266 bytes of data at vaddr=0x00800060, paddr=0x0000165c, flags=00000006 loading
+Program header 2 , 6 bytes of data at vaddr=0x0080016A, paddr=0x0080016a, flags=00000006 loading
+COMPILE UNIT [00001CF3]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../main.c"
+ comp dir = "C:\Users\abdo\AppData\Local\Temp\3458a983c1e94d1eb741e035e3587856\ATmega8\Debug"
+ low pc = [000000B8]
+ high pc = [00000102]
+ statement list = 00000000
+ BASE TYPE [00001D0D]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00001D14]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00001D1B]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ TYPEDEF [00001D22]
+  name = "uint16_t"
+  decl file = 00000002
+  decl line = 0000007C
+  type = REF 00001D2D
+ BASE TYPE [00001D2D]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [00001D34]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ BASE TYPE [00001D3B]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [00001D42]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [00001D49]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ BASE TYPE [00001D50]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ SUBPROGRAM [00001D57]
+  external = 00000001
+  name = "main"
+  decl file = 00000001
+  decl line = 00000011
+  prototyped = 00000001
+  type = REF 00001D1B
+  low pc = [000000B8]
+  high pc = [00000102]
+  frame base (2 bytes) = R32 
+  VARIABLE [00001D6F]
+   name = "RIGHT"
+   decl file = 00000001
+   decl line = 00000012
+   type = REF 00001D22
+  VARIABLE [00001D7A]
+   name = "LEFT"
+   decl file = 00000001
+   decl line = 00000013
+   type = REF 00001D22
+
+[LINE] Include dir: '..'
+[LINE] Include dir: 'c:\winavr-20100110\lib\gcc\..\..\avr\include'
+Line 17: 000000B8-000000C0
+Line 20: 000000C0-000000C2
+Line 21: 000000C2-000000CC
+Line 23: 000000CC-000000D6
+Line 32: 000000D6-000000DA
+Line 36: 000000DA-000000DE
+Line 28: 000000DE-000000E2
+Line 29: 000000E2-000000E4
+Line 32: 000000E4-000000EC
+Line 34: 000000EC-000000F2
+Line 36: 000000F2-000000FA
+Line 39: 000000FA-00000102
+COMPILE UNIT [00001D92]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../DISTANCE_DETECTOR.c"
+ comp dir = "C:\Users\abdo\AppData\Local\Temp\3458a983c1e94d1eb741e035e3587856\ATmega8\Debug"
+ low pc = [00000102]
+ high pc = [00000328]
+ statement list = 000000E4
+ BASE TYPE [00001DAC]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ TYPEDEF [00001DB3]
+  name = "uint8_t"
+  decl file = 00000003
+  decl line = 0000007A
+  type = REF 00001DBE
+ BASE TYPE [00001DBE]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00001DC5]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ TYPEDEF [00001DCC]
+  name = "uint16_t"
+  decl file = 00000003
+  decl line = 0000007C
+  type = REF 00001DD7
+ BASE TYPE [00001DD7]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [00001DDE]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ BASE TYPE [00001DE5]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [00001DEC]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [00001DF3]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ BASE TYPE [00001DFA]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ SUBPROGRAM [00001E01]
+  name = "_delay_loop_2"
+  decl file = 00000002
+  decl line = 00000068
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 00001E1A
+  FORMAL PARAMETER [00001E0E]
+   name = "__count"
+   decl file = 00000002
+   decl line = 00000067
+   type = REF 00001DCC
+ SUBPROGRAM [00001E1A]
+  name = "_delay_ms"
+  decl file = 00000004
+  decl line = 0000006F
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 00001E4B
+  FORMAL PARAMETER [00001E27]
+   name = "__ms"
+   decl file = 00000004
+   decl line = 0000006E
+   type = REF 00001E4B
+  VARIABLE [00001E32]
+   name = "__ticks"
+   decl file = 00000004
+   decl line = 00000070
+   type = REF 00001DCC
+  VARIABLE [00001E3D]
+   name = "__tmp"
+   decl file = 00000004
+   decl line = 00000071
+   type = REF 00001E4B
+  LEXICAL BLOCK [00001E48]
+  LEXICAL BLOCK [00001E49]
+ BASE TYPE [00001E4B]
+  byte size = 00000004
+  encoding = 00000004
+  name = "double"
+ SUBPROGRAM [00001E52]
+  name = "_delay_loop_1"
+  decl file = 00000002
+  decl line = 00000052
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 00001E6B
+  FORMAL PARAMETER [00001E5F]
+   name = "__count"
+   decl file = 00000002
+   decl line = 00000051
+   type = REF 00001DB3
+ SUBPROGRAM [00001E6B]
+  name = "_delay_us"
+  decl file = 00000004
+  decl line = 00000095
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 00001EB4
+  FORMAL PARAMETER [00001E78]
+   name = "__us"
+   decl file = 00000004
+   decl line = 00000094
+   type = REF 00001E4B
+  VARIABLE [00001E83]
+   name = "__ticks"
+   decl file = 00000004
+   decl line = 00000096
+   type = REF 00001DB3
+  VARIABLE [00001E8E]
+   name = "__tmp"
+   decl file = 00000004
+   decl line = 00000097
+   type = REF 00001E4B
+  LEXICAL BLOCK [00001E99]
+   sibling = REF 00001EB2
+   FORMAL PARAMETER [00001E9E]
+    abstract origin = REF 00001E27
+   LEXICAL BLOCK [00001EA3]
+    VARIABLE [00001EA4]
+     abstract origin = REF 00001E32
+    VARIABLE [00001EA9]
+     abstract origin = REF 00001E3D
+    LEXICAL BLOCK [00001EAE]
+    LEXICAL BLOCK [00001EAF]
+  LEXICAL BLOCK [00001EB2]
+ SUBPROGRAM [00001EB4]
+  external = 00000001
+  name = "start"
+  decl file = 00000001
+  decl line = 00000015
+  prototyped = 00000001
+  low pc = [00000102]
+  high pc = [00000142]
+  frame base (2 bytes) = R32 
+  sibling = REF 00001EDC
+  FORMAL PARAMETER [00001ECC]
+   name = "trig"
+   decl file = 00000001
+   decl line = 00000014
+   type = REF 00001DB3
+   location = 00000000
+ SUBPROGRAM [00001EDC]
+  external = 00000001
+  name = "TRIG_SIGNAL"
+  decl file = 00000001
+  decl line = 0000003C
+  low pc = [00000142]
+  high pc = [00000174]
+  frame base (2 bytes) = R32 
+  sibling = REF 00001F5A
+  INLINED SUBROUTINE [00001EF3]
+   abstract origin = REF 00001E6B
+   low pc = [0000015E]
+   high pc = [00000164]
+   unknown 58 = 00000001
+   unknown 59 = 0000003F
+   sibling = REF 00001F28
+   LEXICAL BLOCK [00001F06]
+    low pc = [0000015E]
+    high pc = [00000164]
+    INLINED SUBROUTINE [00001F0F]
+     abstract origin = REF 00001E52
+     low pc = [0000015E]
+     high pc = [00000164]
+     unknown 58 = 00000004
+     unknown 59 = 000000A1
+     FORMAL PARAMETER [00001F1E]
+      abstract origin = REF 00001E5F
+      location (1 bytes) = R25 
+  INLINED SUBROUTINE [00001F28]
+   abstract origin = REF 00001E6B
+   low pc = [0000016C]
+   high pc = [00000172]
+   unknown 58 = 00000001
+   unknown 59 = 00000041
+   LEXICAL BLOCK [00001F37]
+    low pc = [0000016C]
+    high pc = [00000172]
+    INLINED SUBROUTINE [00001F40]
+     abstract origin = REF 00001E52
+     low pc = [0000016C]
+     high pc = [00000172]
+     unknown 58 = 00000004
+     unknown 59 = 000000A1
+     FORMAL PARAMETER [00001F4F]
+      abstract origin = REF 00001E5F
+      location (1 bytes) = R24 
+ SUBPROGRAM [00001F5A]
+  external = 00000001
+  name = "MEASURE_IN_CM"
+  decl file = 00000001
+  decl line = 00000025
+  type = REF 00001DCC
+  low pc = [00000174]
+  high pc = [0000020E]
+  frame base (2 bytes) = R32 
+  sibling = REF 00001FA9
+  INLINED SUBROUTINE [00001F75]
+   abstract origin = REF 00001E1A
+   low pc = [000001B0]
+   high pc = [000001B8]
+   unknown 58 = 00000001
+   unknown 59 = 00000034
+   LEXICAL BLOCK [00001F84]
+    low pc = [000001B0]
+    high pc = [000001B8]
+    INLINED SUBROUTINE [00001F8D]
+     abstract origin = REF 00001E01
+     low pc = [000001B0]
+     high pc = [000001B8]
+     unknown 58 = 00000004
+     unknown 59 = 00000082
+     FORMAL PARAMETER [00001F9C]
+      abstract origin = REF 00001E0E
+      location = 00000013
+ SUBPROGRAM [00001FA9]
+  external = 00000001
+  name = "__vector_2"
+  decl file = 00000001
+  decl line = 00000046
+  prototyped = 00000001
+  low pc = [0000020E]
+  high pc = [000002CE]
+  frame base (2 bytes) = R32 
+ SUBPROGRAM [00001FBD]
+  external = 00000001
+  name = "__vector_8"
+  decl file = 00000001
+  decl line = 0000005A
+  prototyped = 00000001
+  low pc = [000002CE]
+  high pc = [00000328]
+  frame base (2 bytes) = R32 
+ VARIABLE [00001FD1]
+  name = "secs"
+  decl file = 00000001
+  decl line = 0000000D
+  type = REF 00001FE3
+  external = 00000001
+  location (5 bytes) = 0080016C 
+ VOLATILE TYPE [00001FE3]
+  type = REF 00001FE8
+ BASE TYPE [00001FE8]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ VARIABLE [00001FEF]
+  name = "over_flow"
+  decl file = 00000001
+  decl line = 0000000E
+  type = REF 00002001
+  external = 00000001
+  location (5 bytes) = 0080016A 
+ VOLATILE TYPE [00002001]
+  type = REF 00001DCC
+ VARIABLE [00002006]
+  name = "trig_val"
+  decl file = 00000001
+  decl line = 0000000F
+  type = REF 00001DB3
+  external = 00000001
+  location (5 bytes) = 00800060 
+ VARIABLE [00002018]
+  name = "flag"
+  decl file = 00000001
+  decl line = 00000012
+  type = REF 0000202A
+  external = 00000001
+  location (5 bytes) = 00800061 
+ VOLATILE TYPE [0000202A]
+  type = REF 00001DFA
+
+[LINE] Include dir: '..'
+[LINE] Include dir: 'c:\winavr-20100110\lib\gcc\..\..\avr\include'
+[LINE] Include dir: 'c:\winavr-20100110\lib\gcc\..\..\avr\include\util'
+Line 21: 00000102-00000102
+Line 23: 00000102-00000108
+Line 24: 00000108-0000010A
+Line 27: 0000010A-00000114
+Line 28: 00000114-0000011E
+Line 29: 0000011E-00000134
+Line 30: 00000134-00000138
+Line 31: 00000138-0000013E
+Line 32: 0000013E-00000140
+Line 33: 00000140-00000142
+Line 60: 00000142-00000142
+Line 62: 00000142-0000015E
+Line 64: 00000164-0000016C
+Line 37: 00000174-00000174
+Line 38: 00000174-00000178
+Line 45: 00000178-0000018A
+Line 43: 0000018A-000001B0
+Line 53: 000001B8-000001BA
+Line 54: 000001BA-000001D8
+Line 57: 000001D8-00000208
+Line 58: 00000208-0000020E
+Line 70: 0000020E-00000234
+Line 71: 00000234-0000023C
+Line 72: 0000023C-00000246
+Line 73: 00000246-00000250
+Line 75: 00000250-00000254
+Line 76: 00000254-00000258
+Line 77: 00000258-00000272
+Line 80: 00000272-00000292
+Line 81: 00000292-00000294
+Line 83: 00000294-0000029A
+Line 84: 0000029A-000002A2
+Line 85: 000002A2-000002A8
+Line 87: 000002A8-000002CE
+Line 90: 000002CE-000002E0
+Line 91: 000002E0-000002F2
+Line 92: 000002F2-000002F6
+Line 93: 000002F6-00000300
+Line 94: 00000300-0000030A
+Line 95: 0000030A-00000316
+Line 97: 00000316-00000328
+COMPILE UNIT [0000203B]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../lcd.c"
+ comp dir = "C:\Users\abdo\AppData\Local\Temp\3458a983c1e94d1eb741e035e3587856\ATmega8\Debug"
+ low pc = [00000328]
+ high pc = [000004E6]
+ statement list = 00000349
+ BASE TYPE [00002055]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [0000205C]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00002063]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ TYPEDEF [0000206A]
+  name = "uint16_t"
+  decl file = 00000004
+  decl line = 0000007C
+  type = REF 00002075
+ BASE TYPE [00002075]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [0000207C]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ BASE TYPE [00002083]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [0000208A]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [00002091]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ SUBPROGRAM [00002098]
+  name = "_delay_loop_2"
+  decl file = 00000002
+  decl line = 00000068
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 000020B1
+  FORMAL PARAMETER [000020A5]
+   name = "__count"
+   decl file = 00000002
+   decl line = 00000067
+   type = REF 0000206A
+ SUBPROGRAM [000020B1]
+  name = "_delay_ms"
+  decl file = 00000003
+  decl line = 0000006F
+  prototyped = 00000001
+  inline = 00000003
+  sibling = REF 000020E2
+  FORMAL PARAMETER [000020BE]
+   name = "__ms"
+   decl file = 00000003
+   decl line = 0000006E
+   type = REF 000020E2
+  VARIABLE [000020C9]
+   name = "__ticks"
+   decl file = 00000003
+   decl line = 00000070
+   type = REF 0000206A
+  VARIABLE [000020D4]
+   name = "__tmp"
+   decl file = 00000003
+   decl line = 00000071
+   type = REF 000020E2
+  LEXICAL BLOCK [000020DF]
+  LEXICAL BLOCK [000020E0]
+ BASE TYPE [000020E2]
+  byte size = 00000004
+  encoding = 00000004
+  name = "double"
+ SUBPROGRAM [000020E9]
+  external = 00000001
+  name = "cmd"
+  decl file = 00000001
+  decl line = 00000010
+  prototyped = 00000001
+  low pc = [00000328]
+  high pc = [0000034A]
+  frame base (2 bytes) = R32 
+  sibling = REF 00002142
+  FORMAL PARAMETER [00002101]
+   name = "a"
+   decl file = 00000001
+   decl line = 0000000F
+   type = REF 00002063
+   location = 0000002B
+  INLINED SUBROUTINE [0000210E]
+   abstract origin = REF 000020B1
+   low pc = [0000033A]
+   high pc = [00000342]
+   unknown 58 = 00000001
+   unknown 59 = 00000014
+   LEXICAL BLOCK [0000211D]
+    low pc = [0000033A]
+    high pc = [00000342]
+    INLINED SUBROUTINE [00002126]
+     abstract origin = REF 00002098
+     low pc = [0000033A]
+     high pc = [00000342]
+     unknown 58 = 00000003
+     unknown 59 = 00000082
+     FORMAL PARAMETER [00002135]
+      abstract origin = REF 000020A5
+      location = 00000043
+ SUBPROGRAM [00002142]
+  external = 00000001
+  name = "init"
+  decl file = 00000001
+  decl line = 00000003
+  prototyped = 00000001
+  low pc = [0000034A]
+  high pc = [00000378]
+  frame base (2 bytes) = R32 
+ SUBPROGRAM [00002156]
+  external = 00000001
+  name = "data"
+  decl file = 00000001
+  decl line = 00000018
+  prototyped = 00000001
+  low pc = [00000378]
+  high pc = [0000039A]
+  frame base (2 bytes) = R32 
+  sibling = REF 000021AF
+  FORMAL PARAMETER [0000216E]
+   name = "s"
+   decl file = 00000001
+   decl line = 00000017
+   type = REF 000021AF
+   location = 0000005B
+  INLINED SUBROUTINE [0000217B]
+   abstract origin = REF 000020B1
+   low pc = [0000038A]
+   high pc = [00000392]
+   unknown 58 = 00000001
+   unknown 59 = 0000001C
+   LEXICAL BLOCK [0000218A]
+    low pc = [0000038A]
+    high pc = [00000392]
+    INLINED SUBROUTINE [00002193]
+     abstract origin = REF 00002098
+     low pc = [0000038A]
+     high pc = [00000392]
+     unknown 58 = 00000003
+     unknown 59 = 00000082
+     FORMAL PARAMETER [000021A2]
+      abstract origin = REF 000020A5
+      location = 0000006E
+ BASE TYPE [000021AF]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ SUBPROGRAM [000021B6]
+  external = 00000001
+  name = "display"
+  decl file = 00000001
+  decl line = 00000020
+  prototyped = 00000001
+  low pc = [0000039A]
+  high pc = [000003B6]
+  frame base (2 bytes) = R32 
+  sibling = REF 000021DC
+  FORMAL PARAMETER [000021CE]
+   name = "p"
+   decl file = 00000001
+   decl line = 0000001F
+   type = REF 000021DC
+   location = 00000086
+ POINTER TYPE [000021DC]
+  byte size = 00000002
+  type = REF 000021E2
+ CONST TYPE [000021E2]
+  type = REF 000021AF
+ SUBPROGRAM [000021E7]
+  external = 00000001
+  name = "reverse"
+  decl file = 00000001
+  decl line = 00000039
+  prototyped = 00000001
+  type = REF 00002063
+  low pc = [000003B6]
+  high pc = [00000466]
+  frame base (2 bytes) = R32 
+  sibling = REF 0000223C
+  FORMAL PARAMETER [00002203]
+   name = "x"
+   decl file = 00000001
+   decl line = 00000039
+   type = REF 00002063
+   location = 000000AE
+  VARIABLE [00002210]
+   name = "i"
+   decl file = 00000001
+   decl line = 0000003A
+   type = REF 00002063
+   location = 000000E6
+  VARIABLE [0000221D]
+   name = "reversed"
+   decl file = 00000001
+   decl line = 0000003A
+   type = REF 00002063
+   location = 000000FE
+  VARIABLE [0000222C]
+   name = "size"
+   decl file = 00000001
+   decl line = 0000003A
+   type = REF 00002063
+   location = 00000136
+ SUBPROGRAM [0000223C]
+  external = 00000001
+  name = "display_int"
+  decl file = 00000001
+  decl line = 00000028
+  prototyped = 00000001
+  low pc = [00000466]
+  high pc = [000004E6]
+  frame base (2 bytes) = R32 
+  FORMAL PARAMETER [00002250]
+   name = "value"
+   decl file = 00000001
+   decl line = 00000028
+   type = REF 00002063
+   location = 0000014E
+  VARIABLE [0000225F]
+   name = "put_zero"
+   decl file = 00000001
+   decl line = 00000029
+   type = REF 00002063
+  VARIABLE [0000226A]
+   name = "i"
+   decl file = 00000001
+   decl line = 00000030
+   type = REF 00002063
+   location = 000001D6
+  VARIABLE [00002277]
+   name = "size"
+   decl file = 00000001
+   decl line = 00000030
+   type = REF 00002063
+   location = 000001EE
+
+[LINE] Include dir: '..'
+[LINE] Include dir: 'c:\winavr-20100110\lib\gcc\..\..\avr\include'
+[LINE] Include dir: 'c:\winavr-20100110\lib\gcc\..\..\avr\include\util'
+Line 16: 00000328-00000328
+Line 17: 00000328-0000032A
+Line 18: 0000032A-00000334
+Line 19: 00000334-0000033A
+Line 21: 00000342-00000348
+Line 3: 0000034A-0000034A
+Line 4: 0000034A-00000354
+Line 5: 00000354-00000358
+Line 6: 00000358-0000035E
+Line 7: 0000035E-00000364
+Line 8: 00000364-0000036A
+Line 9: 0000036A-00000370
+Line 10: 00000370-00000376
+Line 12: 00000376-00000378
+Line 24: 00000378-00000378
+Line 25: 00000378-0000037A
+Line 26: 0000037A-00000384
+Line 27: 00000384-0000038A
+Line 29: 00000392-00000398
+Line 30: 00000398-0000039A
+Line 32: 0000039A-000003A0
+Line 33: 000003A0-000003A6
+Line 35: 000003A6-000003A8
+Line 36: 000003A8-000003AA
+Line 33: 000003AA-000003B0
+Line 38: 000003B0-000003B6
+Line 57: 000003B6-000003C8
+Line 58: 000003C8-000003E4
+Line 59: 000003E4-000003F0
+Line 60: 000003F0-000003FA
+Line 61: 000003FA-0000040E
+Line 65: 0000040E-0000041C
+Line 60: 0000041C-00000428
+Line 61: 00000428-0000042E
+Line 64: 0000042E-00000448
+Line 59: 00000448-00000450
+Line 40: 00000466-00000478
+Line 46: 00000478-0000047C
+Line 48: 0000047C-00000498
+Line 49: 00000498-000004A2
+Line 50: 000004A2-000004AE
+Line 51: 000004AE-000004BC
+Line 49: 000004BC-000004C4
+Line 53: 000004C4-000004D0
+Line 54: 000004D0-000004D4
+Line 56: 000004D4-000004E6
+COMPILE UNIT [00002293]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../../../gcc-4.3.3/libgcc/../gcc/libgcc2.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [000004E6]
+ high pc = [00000536]
+ statement list = 000005C6
+ BASE TYPE [000022AD]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [000022B4]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [000022BB]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ BASE TYPE [000022C2]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [000022C9]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [000022D0]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [000022D7]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000092
+  type = REF 000022E2
+ BASE TYPE [000022E2]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [000022E9]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [000022F0]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ TYPEDEF [000022F7]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 000000A0
+  type = REF 00002302
+ BASE TYPE [00002302]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00002309]
+  byte size = 00000008
+  encoding = 00000003
+  name = "complex float"
+ SUBPROGRAM [00002310]
+  external = 00000001
+  name = "__fixunssfsi"
+  decl file = 00000001
+  decl line = 000006A5
+  prototyped = 00000001
+  type = REF 000022D7
+  low pc = [000004E6]
+  high pc = [00000536]
+  frame base (2 bytes) = R32 
+  FORMAL PARAMETER [00002329]
+   name = "a"
+   decl file = 00000001
+   decl line = 000006A4
+   type = REF 000022F7
+   location = 00000206
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc'
+COMPILE UNIT [00002344]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000536]
+ high pc = [0000086E]
+ statement list = 0000066D
+ BASE TYPE [0000235E]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00002365]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [0000236C]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00002373]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 0000237E
+ BASE TYPE [0000237E]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ TYPEDEF [00002385]
+  name = "SItype"
+  decl file = 00000002
+  decl line = 00000068
+  type = REF 00002390
+ BASE TYPE [00002390]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00002397]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 000023A2
+ BASE TYPE [000023A2]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [000023A9]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 000023B4
+ BASE TYPE [000023B4]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [000023BB]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 000023A9
+ TYPEDEF [000023C6]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00002397
+ TYPEDEF [000023D1]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00002373
+ TYPEDEF [000023DC]
+  name = "intfrac"
+  decl file = 00000002
+  decl line = 000000C7
+  type = REF 00002385
+ ENUMERATION TYPE [000023E7]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 0000240F
+  ENUMERATOR [000023F0]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000023F6]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000023FC]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00002402]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00002408]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [0000240F]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 0000242E
+  MEMBER [00002418]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 000023BB
+  MEMBER [00002423]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 0000242E
+ ARRAY TYPE [0000242E]
+  type = REF 000023C6
+  sibling = REF 0000243E
+  SUBRANGE TYPE [00002437]
+   type = REF 0000243E
+   upper bound = 00000001
+ BASE TYPE [0000243E]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00002441]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00002487
+  MEMBER [0000244A]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 0000236C
+   data member location (2 bytes) = +0 
+  MEMBER [00002459]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00002487
+   data member location (2 bytes) = +1 
+  MEMBER [00002468]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 0000248E
+   data member location (2 bytes) = +2 
+  MEMBER [00002477]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 0000240F
+   data member location (2 bytes) = +4 
+ BASE TYPE [00002487]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [0000248E]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00002495]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00002441
+ STRUCTURE TYPE [000024A1]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 000024E1
+  MEMBER [000024AA]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 000023BB
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [000024BC]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 000023A2
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [000024CE]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 000023A2
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [000024E1]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 0000250F
+  MEMBER [000024EA]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 000023D1
+  MEMBER [000024F6]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 000023BB
+  MEMBER [00002502]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 000024A1
+ TYPEDEF [0000250F]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 000024E1
+ SUBPROGRAM [0000251B]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 00002365
+  inline = 00000003
+  sibling = REF 00002536
+  FORMAL PARAMETER [0000252C]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 00002536
+ POINTER TYPE [00002536]
+  byte size = 00000002
+  type = REF 00002495
+ SUBPROGRAM [0000253C]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 00002365
+  inline = 00000003
+  sibling = REF 00002557
+  FORMAL PARAMETER [0000254D]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 00002536
+ SUBPROGRAM [00002557]
+  name = "nan"
+  decl file = 00000001
+  decl line = 00000098
+  prototyped = 00000001
+  type = REF 00002536
+  inline = 00000003
+ SUBPROGRAM [00002564]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 00002365
+  inline = 00000003
+  sibling = REF 0000257F
+  FORMAL PARAMETER [00002575]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 00002536
+ SUBPROGRAM [0000257F]
+  name = "_fpadd_parts"
+  decl file = 00000001
+  decl line = 00000263
+  prototyped = 00000001
+  type = REF 00002536
+  low pc = [00000536]
+  high pc = [000007CA]
+  frame base (2 bytes) = R32 
+  sibling = REF 00002682
+  FORMAL PARAMETER [0000259B]
+   name = "a"
+   decl file = 00000001
+   decl line = 00000260
+   type = REF 00002536
+   location = 0000023A
+  FORMAL PARAMETER [000025A9]
+   name = "b"
+   decl file = 00000001
+   decl line = 00000261
+   type = REF 00002536
+   location = 000002A2
+  FORMAL PARAMETER [000025B7]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 00000262
+   type = REF 00002536
+   location = 0000030A
+  VARIABLE [000025C7]
+   name = "tfraction"
+   decl file = 00000001
+   decl line = 00000264
+   type = REF 000023DC
+   location = 00000362
+  VARIABLE [000025D7]
+   name = "a_normal_exp"
+   decl file = 00000001
+   decl line = 00000267
+   type = REF 00002365
+   location = 000003AC
+  VARIABLE [000025E7]
+   name = "b_normal_exp"
+   decl file = 00000001
+   decl line = 00000268
+   type = REF 00002365
+   location = 000003D4
+  VARIABLE [000025F7]
+   name = "a_fraction"
+   decl file = 00000001
+   decl line = 00000269
+   type = REF 000023BB
+   location = 000003EC
+  VARIABLE [00002607]
+   name = "b_fraction"
+   decl file = 00000001
+   decl line = 0000026A
+   type = REF 000023BB
+   location = 00000420
+  INLINED SUBROUTINE [00002617]
+   abstract origin = REF 0000251B
+   low pc = [00000546]
+   high pc = [00000548]
+   unknown 58 = 00000001
+   unknown 59 = 0000026C
+   sibling = REF 00002631
+   FORMAL PARAMETER [0000262B]
+    abstract origin = REF 0000252C
+  INLINED SUBROUTINE [00002631]
+   abstract origin = REF 0000251B
+   low pc = [0000054E]
+   high pc = [00000552]
+   unknown 58 = 00000001
+   unknown 59 = 00000270
+   sibling = REF 0000264B
+   FORMAL PARAMETER [00002645]
+    abstract origin = REF 0000252C
+  INLINED SUBROUTINE [0000264B]
+   abstract origin = REF 00002557
+   low pc = [00000570]
+   high pc = [00000576]
+   unknown 58 = 00000001
+   unknown 59 = 00000278
+  LEXICAL BLOCK [0000265B]
+   low pc = [000005B0]
+   high pc = [000006C6]
+   VARIABLE [00002664]
+    name = "diff"
+    decl file = 00000001
+    decl line = 00000291
+    type = REF 00002365
+    location = 00000454
+   VARIABLE [00002674]
+    name = "sdiff"
+    decl file = 00000001
+    decl line = 00000292
+    type = REF 00002365
+ SUBPROGRAM [00002682]
+  external = 00000001
+  name = "__subsf3"
+  decl file = 00000001
+  decl line = 00000302
+  prototyped = 00000001
+  type = REF 000023D1
+  low pc = [000007CA]
+  high pc = [00000820]
+  frame base (2 bytes) = R32 
+  sibling = REF 00002711
+  FORMAL PARAMETER [0000269F]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 00000301
+   type = REF 000023D1
+   location = 000004EC
+  FORMAL PARAMETER [000026AF]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 00000301
+   type = REF 000023D1
+   location = 0000050A
+  VARIABLE [000026BF]
+   name = "a"
+   decl file = 00000001
+   decl line = 00000303
+   type = REF 00002495
+   location (2 bytes) = [R28]+9 
+  VARIABLE [000026CC]
+   name = "b"
+   decl file = 00000001
+   decl line = 00000304
+   type = REF 00002495
+   location (2 bytes) = [R28]+17 
+  VARIABLE [000026D9]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 00000305
+   type = REF 00002495
+   location (2 bytes) = [R28]+25 
+  VARIABLE [000026E8]
+   name = "res"
+   decl file = 00000001
+   decl line = 00000306
+   type = REF 00002536
+  VARIABLE [000026F4]
+   name = "au"
+   decl file = 00000001
+   decl line = 00000307
+   type = REF 0000250F
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00002702]
+   name = "bu"
+   decl file = 00000001
+   decl line = 00000307
+   type = REF 0000250F
+   location (2 bytes) = [R28]+5 
+ SUBPROGRAM [00002711]
+  external = 00000001
+  name = "__addsf3"
+  decl file = 00000001
+  decl line = 000002EE
+  prototyped = 00000001
+  type = REF 000023D1
+  low pc = [00000820]
+  high pc = [0000086E]
+  frame base (2 bytes) = R32 
+  sibling = REF 000027A0
+  FORMAL PARAMETER [0000272E]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 000002ED
+   type = REF 000023D1
+   location = 00000528
+  FORMAL PARAMETER [0000273E]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 000002ED
+   type = REF 000023D1
+   location = 00000546
+  VARIABLE [0000274E]
+   name = "a"
+   decl file = 00000001
+   decl line = 000002EF
+   type = REF 00002495
+   location (2 bytes) = [R28]+9 
+  VARIABLE [0000275B]
+   name = "b"
+   decl file = 00000001
+   decl line = 000002F0
+   type = REF 00002495
+   location (2 bytes) = [R28]+17 
+  VARIABLE [00002768]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 000002F1
+   type = REF 00002495
+   location (2 bytes) = [R28]+25 
+  VARIABLE [00002777]
+   name = "res"
+   decl file = 00000001
+   decl line = 000002F2
+   type = REF 00002536
+  VARIABLE [00002783]
+   name = "au"
+   decl file = 00000001
+   decl line = 000002F3
+   type = REF 0000250F
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00002791]
+   name = "bu"
+   decl file = 00000001
+   decl line = 000002F3
+   type = REF 0000250F
+   location (2 bytes) = [R28]+5 
+ VARIABLE [000027A0]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 000027AD
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [000027AD]
+  type = REF 00002495
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [000027BE]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [0000086E]
+ high pc = [00000A58]
+ statement list = 0000091C
+ BASE TYPE [000027D8]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [000027DF]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [000027E6]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [000027ED]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 000027F8
+ BASE TYPE [000027F8]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [000027FF]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00002806]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 00002811
+ BASE TYPE [00002811]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00002818]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 00002823
+ BASE TYPE [00002823]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [0000282A]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00002818
+ TYPEDEF [00002835]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00002806
+ TYPEDEF [00002840]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 000027ED
+ ENUMERATION TYPE [0000284B]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 00002873
+  ENUMERATOR [00002854]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [0000285A]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [00002860]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00002866]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [0000286C]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [00002873]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 00002892
+  MEMBER [0000287C]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 0000282A
+  MEMBER [00002887]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 00002892
+ ARRAY TYPE [00002892]
+  type = REF 00002835
+  sibling = REF 000028A2
+  SUBRANGE TYPE [0000289B]
+   type = REF 000028A2
+   upper bound = 00000001
+ BASE TYPE [000028A2]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [000028A5]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 000028EB
+  MEMBER [000028AE]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 000027E6
+   data member location (2 bytes) = +0 
+  MEMBER [000028BD]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 000028EB
+   data member location (2 bytes) = +1 
+  MEMBER [000028CC]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 000028F2
+   data member location (2 bytes) = +2 
+  MEMBER [000028DB]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 00002873
+   data member location (2 bytes) = +4 
+ BASE TYPE [000028EB]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [000028F2]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [000028F9]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 000028A5
+ STRUCTURE TYPE [00002905]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 00002945
+  MEMBER [0000290E]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 0000282A
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [00002920]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 00002811
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [00002932]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 00002811
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [00002945]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 00002973
+  MEMBER [0000294E]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 00002840
+  MEMBER [0000295A]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 0000282A
+  MEMBER [00002966]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00002905
+ TYPEDEF [00002973]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 00002945
+ SUBPROGRAM [0000297F]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 000027DF
+  inline = 00000003
+  sibling = REF 0000299A
+  FORMAL PARAMETER [00002990]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 0000299A
+ POINTER TYPE [0000299A]
+  byte size = 00000002
+  type = REF 000028F9
+ SUBPROGRAM [000029A0]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 000027DF
+  inline = 00000003
+  sibling = REF 000029BB
+  FORMAL PARAMETER [000029B1]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 0000299A
+ SUBPROGRAM [000029BB]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 000027DF
+  inline = 00000003
+  sibling = REF 000029D6
+  FORMAL PARAMETER [000029CC]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 0000299A
+ SUBPROGRAM [000029D6]
+  name = "nan"
+  decl file = 00000001
+  decl line = 00000098
+  prototyped = 00000001
+  type = REF 0000299A
+  inline = 00000003
+ SUBPROGRAM [000029E3]
+  name = "_fpmul_parts"
+  decl file = 00000001
+  decl line = 0000031C
+  prototyped = 00000001
+  type = REF 0000299A
+  inline = 00000003
+  sibling = REF 00002AC6
+  FORMAL PARAMETER [000029F5]
+   name = "a"
+   decl file = 00000001
+   decl line = 00000319
+   type = REF 0000299A
+  FORMAL PARAMETER [000029FF]
+   name = "b"
+   decl file = 00000001
+   decl line = 0000031A
+   type = REF 0000299A
+  FORMAL PARAMETER [00002A09]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 0000031B
+   type = REF 0000299A
+  VARIABLE [00002A15]
+   name = "low"
+   decl file = 00000001
+   decl line = 0000031D
+   type = REF 0000282A
+  VARIABLE [00002A21]
+   name = "high"
+   decl file = 00000001
+   decl line = 0000031E
+   type = REF 0000282A
+  LEXICAL BLOCK [00002A2D]
+   sibling = REF 00002A6F
+   VARIABLE [00002A32]
+    name = "x"
+    decl file = 00000001
+    decl line = 0000034A
+    type = REF 0000282A
+   VARIABLE [00002A3C]
+    name = "ylow"
+    decl file = 00000001
+    decl line = 0000034B
+    type = REF 0000282A
+   VARIABLE [00002A48]
+    name = "yhigh"
+    decl file = 00000001
+    decl line = 0000034C
+    type = REF 0000282A
+   VARIABLE [00002A54]
+    name = "bit"
+    decl file = 00000001
+    decl line = 0000034D
+    type = REF 000027DF
+   LEXICAL BLOCK [00002A60]
+    VARIABLE [00002A61]
+     name = "carry"
+     decl file = 00000001
+     decl line = 00000352
+     type = REF 000027DF
+  LEXICAL BLOCK [00002A6F]
+   sibling = REF 00002A7A
+   FORMAL PARAMETER [00002A74]
+    abstract origin = REF 00002990
+  LEXICAL BLOCK [00002A7A]
+   sibling = REF 00002A85
+   FORMAL PARAMETER [00002A7F]
+    abstract origin = REF 00002990
+  LEXICAL BLOCK [00002A85]
+   sibling = REF 00002A90
+   FORMAL PARAMETER [00002A8A]
+    abstract origin = REF 000029B1
+  LEXICAL BLOCK [00002A90]
+   sibling = REF 00002A9B
+   FORMAL PARAMETER [00002A95]
+    abstract origin = REF 000029CC
+  LEXICAL BLOCK [00002A9B]
+  LEXICAL BLOCK [00002A9C]
+   sibling = REF 00002AA7
+   FORMAL PARAMETER [00002AA1]
+    abstract origin = REF 000029B1
+  LEXICAL BLOCK [00002AA7]
+   sibling = REF 00002AB2
+   FORMAL PARAMETER [00002AAC]
+    abstract origin = REF 000029CC
+  LEXICAL BLOCK [00002AB2]
+  LEXICAL BLOCK [00002AB3]
+   sibling = REF 00002ABE
+   FORMAL PARAMETER [00002AB8]
+    abstract origin = REF 000029CC
+  LEXICAL BLOCK [00002ABE]
+   FORMAL PARAMETER [00002ABF]
+    abstract origin = REF 000029CC
+ SUBPROGRAM [00002AC6]
+  external = 00000001
+  name = "__mulsf3"
+  decl file = 00000001
+  decl line = 000003BC
+  prototyped = 00000001
+  type = REF 00002840
+  low pc = [0000086E]
+  high pc = [00000A58]
+  frame base (2 bytes) = R32 
+  sibling = REF 00002C25
+  FORMAL PARAMETER [00002AE3]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 000003BB
+   type = REF 00002840
+   location = 00000564
+  FORMAL PARAMETER [00002AF3]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 000003BB
+   type = REF 00002840
+   location = 00000582
+  VARIABLE [00002B03]
+   name = "a"
+   decl file = 00000001
+   decl line = 000003BD
+   type = REF 000028F9
+   location (2 bytes) = [R28]+9 
+  VARIABLE [00002B10]
+   name = "b"
+   decl file = 00000001
+   decl line = 000003BE
+   type = REF 000028F9
+   location (2 bytes) = [R28]+17 
+  VARIABLE [00002B1D]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 000003BF
+   type = REF 000028F9
+   location (2 bytes) = [R28]+25 
+  VARIABLE [00002B2C]
+   name = "res"
+   decl file = 00000001
+   decl line = 000003C0
+   type = REF 0000299A
+   location = 000005A0
+  VARIABLE [00002B3C]
+   name = "au"
+   decl file = 00000001
+   decl line = 000003C1
+   type = REF 00002973
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00002B4A]
+   name = "bu"
+   decl file = 00000001
+   decl line = 000003C1
+   type = REF 00002973
+   location (2 bytes) = [R28]+5 
+  INLINED SUBROUTINE [00002B58]
+   abstract origin = REF 000029E3
+   low pc = [000008A0]
+   high pc = [00000A50]
+   unknown 58 = 00000001
+   unknown 59 = 000003C9
+   FORMAL PARAMETER [00002B68]
+    abstract origin = REF 00002A09
+   FORMAL PARAMETER [00002B6D]
+    abstract origin = REF 000029FF
+   FORMAL PARAMETER [00002B72]
+    abstract origin = REF 000029F5
+   LEXICAL BLOCK [00002B77]
+    unknown 55 = 00000000
+    VARIABLE [00002B7C]
+     abstract origin = REF 00002A15
+     location (12 bytes) = R14 : R15 : R16 : R17 : 
+    VARIABLE [00002B8E]
+     abstract origin = REF 00002A21
+     location = 000005E8
+    INLINED SUBROUTINE [00002B97]
+     abstract origin = REF 0000297F
+     low pc = [000008A0]
+     high pc = [000008A2]
+     unknown 58 = 00000001
+     unknown 59 = 00000320
+     sibling = REF 00002BB1
+     FORMAL PARAMETER [00002BAB]
+      abstract origin = REF 00002990
+    INLINED SUBROUTINE [00002BB1]
+     abstract origin = REF 0000297F
+     low pc = [000008A6]
+     high pc = [000008A8]
+     unknown 58 = 00000001
+     unknown 59 = 00000325
+     sibling = REF 00002BCB
+     FORMAL PARAMETER [00002BC5]
+      abstract origin = REF 00002990
+    INLINED SUBROUTINE [00002BCB]
+     abstract origin = REF 000029D6
+     low pc = [000008BE]
+     high pc = [000008C4]
+     unknown 58 = 00000001
+     unknown 59 = 00000335
+    LEXICAL BLOCK [00002BDB]
+     unknown 55 = 00000020
+     VARIABLE [00002BE0]
+      abstract origin = REF 00002A32
+      location = 0000061C
+     VARIABLE [00002BE9]
+      abstract origin = REF 00002A3C
+      location (12 bytes) = R6 : R7 : R8 : R9 : 
+     VARIABLE [00002BFB]
+      abstract origin = REF 00002A48
+      location (12 bytes) = R10 : R11 : R12 : R13 : 
+     VARIABLE [00002C0D]
+      abstract origin = REF 00002A54
+      location = 00000650
+     LEXICAL BLOCK [00002C16]
+      unknown 55 = 00000038
+      VARIABLE [00002C1B]
+       abstract origin = REF 00002A61
+ VARIABLE [00002C25]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 00002C32
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [00002C32]
+  type = REF 000028F9
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [00002C43]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000A58]
+ high pc = [00000BA6]
+ statement list = 00000B55
+ BASE TYPE [00002C5D]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00002C64]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00002C6B]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00002C72]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00002C7D
+ BASE TYPE [00002C7D]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00002C84]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00002C8B]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 00002C96
+ BASE TYPE [00002C96]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00002C9D]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 00002CA8
+ BASE TYPE [00002CA8]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00002CAF]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00002C9D
+ TYPEDEF [00002CBA]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00002C8B
+ TYPEDEF [00002CC5]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00002C72
+ ENUMERATION TYPE [00002CD0]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 00002CF8
+  ENUMERATOR [00002CD9]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [00002CDF]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [00002CE5]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00002CEB]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00002CF1]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [00002CF8]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 00002D17
+  MEMBER [00002D01]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 00002CAF
+  MEMBER [00002D0C]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 00002D17
+ ARRAY TYPE [00002D17]
+  type = REF 00002CBA
+  sibling = REF 00002D27
+  SUBRANGE TYPE [00002D20]
+   type = REF 00002D27
+   upper bound = 00000001
+ BASE TYPE [00002D27]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00002D2A]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00002D70
+  MEMBER [00002D33]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00002C6B
+   data member location (2 bytes) = +0 
+  MEMBER [00002D42]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00002D70
+   data member location (2 bytes) = +1 
+  MEMBER [00002D51]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 00002D77
+   data member location (2 bytes) = +2 
+  MEMBER [00002D60]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 00002CF8
+   data member location (2 bytes) = +4 
+ BASE TYPE [00002D70]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00002D77]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00002D7E]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00002D2A
+ STRUCTURE TYPE [00002D8A]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 00002DCA
+  MEMBER [00002D93]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 00002CAF
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [00002DA5]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 00002C96
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [00002DB7]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 00002C96
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [00002DCA]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 00002DF8
+  MEMBER [00002DD3]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 00002CC5
+  MEMBER [00002DDF]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 00002CAF
+  MEMBER [00002DEB]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00002D8A
+ TYPEDEF [00002DF8]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 00002DCA
+ SUBPROGRAM [00002E04]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 00002C64
+  inline = 00000003
+  sibling = REF 00002E1F
+  FORMAL PARAMETER [00002E15]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 00002E1F
+ POINTER TYPE [00002E1F]
+  byte size = 00000002
+  type = REF 00002D7E
+ SUBPROGRAM [00002E25]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 00002C64
+  inline = 00000003
+  sibling = REF 00002E40
+  FORMAL PARAMETER [00002E36]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 00002E1F
+ SUBPROGRAM [00002E40]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 00002C64
+  inline = 00000003
+  sibling = REF 00002E5B
+  FORMAL PARAMETER [00002E51]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 00002E1F
+ SUBPROGRAM [00002E5B]
+  name = "nan"
+  decl file = 00000001
+  decl line = 00000098
+  prototyped = 00000001
+  type = REF 00002E1F
+  inline = 00000003
+ SUBPROGRAM [00002E68]
+  name = "_fpdiv_parts"
+  decl file = 00000001
+  decl line = 000003D3
+  prototyped = 00000001
+  type = REF 00002E1F
+  inline = 00000003
+  sibling = REF 00002EFE
+  FORMAL PARAMETER [00002E7A]
+   name = "a"
+   decl file = 00000001
+   decl line = 000003D1
+   type = REF 00002E1F
+  FORMAL PARAMETER [00002E84]
+   name = "b"
+   decl file = 00000001
+   decl line = 000003D2
+   type = REF 00002E1F
+  VARIABLE [00002E8E]
+   name = "bit"
+   decl file = 00000001
+   decl line = 000003D4
+   type = REF 00002CAF
+  VARIABLE [00002E9A]
+   name = "numerator"
+   decl file = 00000001
+   decl line = 000003D5
+   type = REF 00002CAF
+  VARIABLE [00002EA6]
+   name = "denominator"
+   decl file = 00000001
+   decl line = 000003D6
+   type = REF 00002CAF
+  VARIABLE [00002EB2]
+   name = "quotient"
+   decl file = 00000001
+   decl line = 000003D7
+   type = REF 00002CAF
+  LEXICAL BLOCK [00002EBE]
+   sibling = REF 00002EC9
+   FORMAL PARAMETER [00002EC3]
+    abstract origin = REF 00002E15
+  LEXICAL BLOCK [00002EC9]
+   sibling = REF 00002ED4
+   FORMAL PARAMETER [00002ECE]
+    abstract origin = REF 00002E15
+  LEXICAL BLOCK [00002ED4]
+   sibling = REF 00002EDF
+   FORMAL PARAMETER [00002ED9]
+    abstract origin = REF 00002E36
+  LEXICAL BLOCK [00002EDF]
+   sibling = REF 00002EEA
+   FORMAL PARAMETER [00002EE4]
+    abstract origin = REF 00002E51
+  LEXICAL BLOCK [00002EEA]
+  LEXICAL BLOCK [00002EEB]
+   sibling = REF 00002EF6
+   FORMAL PARAMETER [00002EF0]
+    abstract origin = REF 00002E36
+  LEXICAL BLOCK [00002EF6]
+   FORMAL PARAMETER [00002EF7]
+    abstract origin = REF 00002E51
+ SUBPROGRAM [00002EFE]
+  external = 00000001
+  name = "__divsf3"
+  decl file = 00000001
+  decl line = 00000433
+  prototyped = 00000001
+  type = REF 00002CC5
+  low pc = [00000A58]
+  high pc = [00000BA6]
+  frame base (2 bytes) = R32 
+  sibling = REF 00003021
+  FORMAL PARAMETER [00002F1B]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 00000432
+   type = REF 00002CC5
+   location = 00000668
+  FORMAL PARAMETER [00002F2B]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 00000432
+   type = REF 00002CC5
+   location = 00000686
+  VARIABLE [00002F3B]
+   name = "a"
+   decl file = 00000001
+   decl line = 00000434
+   type = REF 00002D7E
+   location (2 bytes) = [R28]+9 
+  VARIABLE [00002F48]
+   name = "b"
+   decl file = 00000001
+   decl line = 00000435
+   type = REF 00002D7E
+   location (2 bytes) = [R28]+17 
+  VARIABLE [00002F55]
+   name = "res"
+   decl file = 00000001
+   decl line = 00000436
+   type = REF 00002E1F
+   location = 000006A4
+  VARIABLE [00002F65]
+   name = "au"
+   decl file = 00000001
+   decl line = 00000437
+   type = REF 00002DF8
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00002F73]
+   name = "bu"
+   decl file = 00000001
+   decl line = 00000437
+   type = REF 00002DF8
+   location (2 bytes) = [R28]+5 
+  INLINED SUBROUTINE [00002F81]
+   abstract origin = REF 00002E68
+   low pc = [00000A92]
+   high pc = [00000B9C]
+   unknown 58 = 00000001
+   unknown 59 = 0000043F
+   FORMAL PARAMETER [00002F91]
+    abstract origin = REF 00002E84
+   FORMAL PARAMETER [00002F96]
+    abstract origin = REF 00002E7A
+   LEXICAL BLOCK [00002F9B]
+    low pc = [00000A92]
+    high pc = [00000B9C]
+    VARIABLE [00002FA4]
+     abstract origin = REF 00002E8E
+     location = 000006EC
+    VARIABLE [00002FAD]
+     abstract origin = REF 00002E9A
+     location (12 bytes) = R14 : R15 : R16 : R17 : 
+    VARIABLE [00002FBF]
+     abstract origin = REF 00002EA6
+     location (12 bytes) = R10 : R11 : R12 : R13 : 
+    VARIABLE [00002FD1]
+     abstract origin = REF 00002EB2
+     location = 0000070A
+    INLINED SUBROUTINE [00002FDA]
+     abstract origin = REF 00002E04
+     low pc = [00000A92]
+     high pc = [00000A94]
+     unknown 58 = 00000001
+     unknown 59 = 000003D9
+     sibling = REF 00002FF4
+     FORMAL PARAMETER [00002FEE]
+      abstract origin = REF 00002E15
+    INLINED SUBROUTINE [00002FF4]
+     abstract origin = REF 00002E04
+     low pc = [00000A9A]
+     high pc = [00000A9C]
+     unknown 58 = 00000001
+     unknown 59 = 000003DD
+     sibling = REF 0000300E
+     FORMAL PARAMETER [00003008]
+      abstract origin = REF 00002E15
+    INLINED SUBROUTINE [0000300E]
+     abstract origin = REF 00002E5B
+     low pc = [00000ABA]
+     high pc = [00000AC0]
+     unknown 58 = 00000001
+     unknown 59 = 000003E7
+ VARIABLE [00003021]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 0000302E
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [0000302E]
+  type = REF 00002D7E
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [0000303F]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000BA6]
+ high pc = [00000BFC]
+ statement list = 00000D2A
+ TYPEDEF [00003059]
+  name = "QItype"
+  decl file = 00000001
+  decl line = 00000008
+  type = REF 00003064
+ BASE TYPE [00003064]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [0000306B]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003072]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00003079]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00003084
+ BASE TYPE [00003084]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [0000308B]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003092]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 0000309D
+ BASE TYPE [0000309D]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [000030A4]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 000030AF
+ BASE TYPE [000030AF]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [000030B6]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 000030A4
+ TYPEDEF [000030C1]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003092
+ TYPEDEF [000030CC]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00003079
+ ENUMERATION TYPE [000030D7]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 000030FF
+  ENUMERATOR [000030E0]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000030E6]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000030EC]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [000030F2]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [000030F8]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [000030FF]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 0000311E
+  MEMBER [00003108]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 000030B6
+  MEMBER [00003113]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 0000311E
+ ARRAY TYPE [0000311E]
+  type = REF 000030C1
+  sibling = REF 0000312E
+  SUBRANGE TYPE [00003127]
+   type = REF 0000312E
+   upper bound = 00000001
+ BASE TYPE [0000312E]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00003131]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00003177
+  MEMBER [0000313A]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00003072
+   data member location (2 bytes) = +0 
+  MEMBER [00003149]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00003177
+   data member location (2 bytes) = +1 
+  MEMBER [00003158]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 0000317E
+   data member location (2 bytes) = +2 
+  MEMBER [00003167]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 000030FF
+   data member location (2 bytes) = +4 
+ BASE TYPE [00003177]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [0000317E]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003185]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00003131
+ STRUCTURE TYPE [00003191]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 000031D1
+  MEMBER [0000319A]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 000030B6
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [000031AC]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 0000309D
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [000031BE]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 0000309D
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [000031D1]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 000031FF
+  MEMBER [000031DA]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 000030CC
+  MEMBER [000031E6]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 000030B6
+  MEMBER [000031F2]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00003191
+ TYPEDEF [000031FF]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 000031D1
+ SUBPROGRAM [0000320B]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 0000306B
+  inline = 00000003
+  sibling = REF 00003226
+  FORMAL PARAMETER [0000321C]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 00003226
+ POINTER TYPE [00003226]
+  byte size = 00000002
+  type = REF 00003185
+ SUBPROGRAM [0000322C]
+  external = 00000001
+  name = "__eqsf2"
+  decl file = 00000001
+  decl line = 000004B4
+  prototyped = 00000001
+  type = REF 00003059
+  low pc = [00000BA6]
+  high pc = [00000BFC]
+  frame base (2 bytes) = R32 
+  sibling = REF 000032A0
+  FORMAL PARAMETER [00003249]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 000004B3
+   type = REF 000030CC
+   location = 00000728
+  FORMAL PARAMETER [00003259]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 000004B3
+   type = REF 000030CC
+   location = 00000746
+  VARIABLE [00003269]
+   name = "a"
+   decl file = 00000001
+   decl line = 000004B5
+   type = REF 00003185
+   location (2 bytes) = [R28]+9 
+  VARIABLE [00003276]
+   name = "b"
+   decl file = 00000001
+   decl line = 000004B6
+   type = REF 00003185
+   location (2 bytes) = [R28]+17 
+  VARIABLE [00003283]
+   name = "au"
+   decl file = 00000001
+   decl line = 000004B7
+   type = REF 000031FF
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00003291]
+   name = "bu"
+   decl file = 00000001
+   decl line = 000004B7
+   type = REF 000031FF
+   location (2 bytes) = [R28]+5 
+ VARIABLE [000032A0]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 000032AD
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [000032AD]
+  type = REF 00003185
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [000032BE]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000BFC]
+ high pc = [00000C52]
+ statement list = 00000DFD
+ TYPEDEF [000032D8]
+  name = "QItype"
+  decl file = 00000001
+  decl line = 00000008
+  type = REF 000032E3
+ BASE TYPE [000032E3]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [000032EA]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [000032F1]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [000032F8]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00003303
+ BASE TYPE [00003303]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [0000330A]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003311]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 0000331C
+ BASE TYPE [0000331C]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00003323]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 0000332E
+ BASE TYPE [0000332E]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00003335]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00003323
+ TYPEDEF [00003340]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003311
+ TYPEDEF [0000334B]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 000032F8
+ ENUMERATION TYPE [00003356]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 0000337E
+  ENUMERATOR [0000335F]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [00003365]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [0000336B]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00003371]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00003377]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [0000337E]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 0000339D
+  MEMBER [00003387]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 00003335
+  MEMBER [00003392]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 0000339D
+ ARRAY TYPE [0000339D]
+  type = REF 00003340
+  sibling = REF 000033AD
+  SUBRANGE TYPE [000033A6]
+   type = REF 000033AD
+   upper bound = 00000001
+ BASE TYPE [000033AD]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [000033B0]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 000033F6
+  MEMBER [000033B9]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 000032F1
+   data member location (2 bytes) = +0 
+  MEMBER [000033C8]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 000033F6
+   data member location (2 bytes) = +1 
+  MEMBER [000033D7]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 000033FD
+   data member location (2 bytes) = +2 
+  MEMBER [000033E6]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 0000337E
+   data member location (2 bytes) = +4 
+ BASE TYPE [000033F6]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [000033FD]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003404]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 000033B0
+ STRUCTURE TYPE [00003410]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 00003450
+  MEMBER [00003419]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 00003335
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [0000342B]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 0000331C
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [0000343D]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 0000331C
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [00003450]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 0000347E
+  MEMBER [00003459]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 0000334B
+  MEMBER [00003465]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 00003335
+  MEMBER [00003471]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00003410
+ TYPEDEF [0000347E]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 00003450
+ SUBPROGRAM [0000348A]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 000032EA
+  inline = 00000003
+  sibling = REF 000034A5
+  FORMAL PARAMETER [0000349B]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 000034A5
+ POINTER TYPE [000034A5]
+  byte size = 00000002
+  type = REF 00003404
+ SUBPROGRAM [000034AB]
+  external = 00000001
+  name = "__gesf2"
+  decl file = 00000001
+  decl line = 000004F3
+  prototyped = 00000001
+  type = REF 000032D8
+  low pc = [00000BFC]
+  high pc = [00000C52]
+  frame base (2 bytes) = R32 
+  sibling = REF 0000351F
+  FORMAL PARAMETER [000034C8]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 000004F2
+   type = REF 0000334B
+   location = 00000764
+  FORMAL PARAMETER [000034D8]
+   name = "arg_b"
+   decl file = 00000001
+   decl line = 000004F2
+   type = REF 0000334B
+   location = 00000782
+  VARIABLE [000034E8]
+   name = "a"
+   decl file = 00000001
+   decl line = 000004F4
+   type = REF 00003404
+   location (2 bytes) = [R28]+9 
+  VARIABLE [000034F5]
+   name = "b"
+   decl file = 00000001
+   decl line = 000004F5
+   type = REF 00003404
+   location (2 bytes) = [R28]+17 
+  VARIABLE [00003502]
+   name = "au"
+   decl file = 00000001
+   decl line = 000004F6
+   type = REF 0000347E
+   location (2 bytes) = [R28]+1 
+  VARIABLE [00003510]
+   name = "bu"
+   decl file = 00000001
+   decl line = 000004F6
+   type = REF 0000347E
+   location (2 bytes) = [R28]+5 
+ VARIABLE [0000351F]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 0000352C
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [0000352C]
+  type = REF 00003404
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [0000353D]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000C52]
+ high pc = [00000D06]
+ statement list = 00000ED0
+ BASE TYPE [00003557]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [0000355E]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003565]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [0000356C]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00003577
+ BASE TYPE [00003577]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ TYPEDEF [0000357E]
+  name = "SItype"
+  decl file = 00000002
+  decl line = 00000068
+  type = REF 00003589
+ BASE TYPE [00003589]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003590]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 0000359B
+ BASE TYPE [0000359B]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [000035A2]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 000035AD
+ BASE TYPE [000035AD]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [000035B4]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 000035A2
+ TYPEDEF [000035BF]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003590
+ TYPEDEF [000035CA]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 0000356C
+ ENUMERATION TYPE [000035D5]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 000035FD
+  ENUMERATOR [000035DE]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000035E4]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000035EA]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [000035F0]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [000035F6]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [000035FD]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 0000361C
+  MEMBER [00003606]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 000035B4
+  MEMBER [00003611]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 0000361C
+ ARRAY TYPE [0000361C]
+  type = REF 000035BF
+  sibling = REF 0000362C
+  SUBRANGE TYPE [00003625]
+   type = REF 0000362C
+   upper bound = 00000001
+ BASE TYPE [0000362C]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [0000362F]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00003675
+  MEMBER [00003638]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00003565
+   data member location (2 bytes) = +0 
+  MEMBER [00003647]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00003675
+   data member location (2 bytes) = +1 
+  MEMBER [00003656]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 0000367C
+   data member location (2 bytes) = +2 
+  MEMBER [00003665]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 000035FD
+   data member location (2 bytes) = +4 
+ BASE TYPE [00003675]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [0000367C]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003683]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 0000362F
+ SUBPROGRAM [0000368F]
+  name = "clzusi"
+  decl file = 00000001
+  decl line = 000000C6
+  prototyped = 00000001
+  type = REF 0000355E
+  inline = 00000003
+  sibling = REF 000036AA
+  FORMAL PARAMETER [000036A0]
+   name = "n"
+   decl file = 00000001
+   decl line = 000000C5
+   type = REF 000035A2
+ SUBPROGRAM [000036AA]
+  external = 00000001
+  name = "__floatsisf"
+  decl file = 00000001
+  decl line = 00000545
+  prototyped = 00000001
+  type = REF 000035CA
+  low pc = [00000C52]
+  high pc = [00000D06]
+  frame base (2 bytes) = R32 
+  sibling = REF 00003726
+  FORMAL PARAMETER [000036C7]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 00000544
+   type = REF 0000357E
+   location = 000007A0
+  VARIABLE [000036D7]
+   name = "in"
+   decl file = 00000001
+   decl line = 00000546
+   type = REF 00003683
+   location (2 bytes) = [R28]+1 
+  LEXICAL BLOCK [000036E5]
+   low pc = [00000C86]
+   high pc = [00000CF8]
+   VARIABLE [000036EE]
+    name = "uarg"
+    decl file = 00000001
+    decl line = 00000550
+    type = REF 000035A2
+    location = 00000800
+   VARIABLE [000036FE]
+    name = "shift"
+    decl file = 00000001
+    decl line = 00000551
+    type = REF 0000355E
+    location = 00000834
+   INLINED SUBROUTINE [0000370E]
+    abstract origin = REF 0000368F
+    low pc = [00000CCA]
+    high pc = [00000CD0]
+    unknown 58 = 00000001
+    unknown 59 = 00000561
+    FORMAL PARAMETER [0000371E]
+     abstract origin = REF 000036A0
+ VARIABLE [00003726]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 00003733
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [00003733]
+  type = REF 00003683
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [00003744]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000D06]
+ high pc = [00000DA8]
+ statement list = 00001005
+ BASE TYPE [0000375E]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00003765]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [0000376C]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00003773]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 0000377E
+ BASE TYPE [0000377E]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ TYPEDEF [00003785]
+  name = "SItype"
+  decl file = 00000002
+  decl line = 00000068
+  type = REF 00003790
+ BASE TYPE [00003790]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003797]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 000037A2
+ BASE TYPE [000037A2]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [000037A9]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 000037B4
+ BASE TYPE [000037B4]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [000037BB]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 000037A9
+ TYPEDEF [000037C6]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003797
+ TYPEDEF [000037D1]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00003773
+ ENUMERATION TYPE [000037DC]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 00003804
+  ENUMERATOR [000037E5]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000037EB]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000037F1]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [000037F7]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [000037FD]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [00003804]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 00003823
+  MEMBER [0000380D]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 000037BB
+  MEMBER [00003818]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 00003823
+ ARRAY TYPE [00003823]
+  type = REF 000037C6
+  sibling = REF 00003833
+  SUBRANGE TYPE [0000382C]
+   type = REF 00003833
+   upper bound = 00000001
+ BASE TYPE [00003833]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00003836]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 0000387C
+  MEMBER [0000383F]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 0000376C
+   data member location (2 bytes) = +0 
+  MEMBER [0000384E]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 0000387C
+   data member location (2 bytes) = +1 
+  MEMBER [0000385D]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 00003883
+   data member location (2 bytes) = +2 
+  MEMBER [0000386C]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 00003804
+   data member location (2 bytes) = +4 
+ BASE TYPE [0000387C]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00003883]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [0000388A]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00003836
+ STRUCTURE TYPE [00003896]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 000038D6
+  MEMBER [0000389F]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 000037BB
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [000038B1]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 000037A2
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [000038C3]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 000037A2
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [000038D6]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 00003904
+  MEMBER [000038DF]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 000037D1
+  MEMBER [000038EB]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 000037BB
+  MEMBER [000038F7]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00003896
+ TYPEDEF [00003904]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 000038D6
+ SUBPROGRAM [00003910]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 00003765
+  inline = 00000003
+  sibling = REF 0000392B
+  FORMAL PARAMETER [00003921]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 0000392B
+ POINTER TYPE [0000392B]
+  byte size = 00000002
+  type = REF 0000388A
+ SUBPROGRAM [00003931]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 00003765
+  inline = 00000003
+  sibling = REF 0000394C
+  FORMAL PARAMETER [00003942]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 0000392B
+ SUBPROGRAM [0000394C]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 00003765
+  inline = 00000003
+  sibling = REF 00003967
+  FORMAL PARAMETER [0000395D]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 0000392B
+ SUBPROGRAM [00003967]
+  external = 00000001
+  name = "__fixsfsi"
+  decl file = 00000001
+  decl line = 00000593
+  prototyped = 00000001
+  type = REF 00003785
+  low pc = [00000D06]
+  high pc = [00000DA8]
+  frame base (2 bytes) = R32 
+  sibling = REF 000039D6
+  FORMAL PARAMETER [00003984]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 00000592
+   type = REF 000037D1
+   location = 0000084C
+  VARIABLE [00003994]
+   name = "a"
+   decl file = 00000001
+   decl line = 00000594
+   type = REF 0000388A
+   location (2 bytes) = [R28]+5 
+  VARIABLE [000039A1]
+   name = "tmp"
+   decl file = 00000001
+   decl line = 00000595
+   type = REF 00003785
+   location = 0000086A
+  VARIABLE [000039B1]
+   name = "au"
+   decl file = 00000001
+   decl line = 00000596
+   type = REF 00003904
+   location (2 bytes) = [R28]+1 
+  INLINED SUBROUTINE [000039BF]
+   abstract origin = REF 00003910
+   low pc = [00000D24]
+   high pc = [00000D26]
+   unknown 58 = 00000001
+   unknown 59 = 0000059B
+   FORMAL PARAMETER [000039CF]
+    abstract origin = REF 00003921
+ VARIABLE [000039D6]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 000039E3
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [000039E3]
+  type = REF 0000388A
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [000039F4]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000DA8]
+ high pc = [00000DA8]
+ statement list = 0000110E
+ BASE TYPE [00003A0E]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00003A15]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003A1C]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ BASE TYPE [00003A23]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00003A2A]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003A31]
+  name = "UHItype"
+  decl file = 00000001
+  decl line = 00000074
+  type = REF 00003A3C
+ BASE TYPE [00003A3C]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00003A43]
+  name = "USItype"
+  decl file = 00000001
+  decl line = 00000075
+  type = REF 00003A4E
+ BASE TYPE [00003A4E]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00003A55]
+  name = "fractype"
+  decl file = 00000001
+  decl line = 000000C4
+  type = REF 00003A43
+ TYPEDEF [00003A60]
+  name = "halffractype"
+  decl file = 00000001
+  decl line = 000000C5
+  type = REF 00003A31
+ UNION TYPE [00003A6B]
+  byte size = 00000004
+  decl file = 00000001
+  decl line = 00000171
+  sibling = REF 00003A8A
+  MEMBER [00003A74]
+   name = "ll"
+   decl file = 00000001
+   decl line = 00000172
+   type = REF 00003A55
+  MEMBER [00003A7F]
+   name = "l"
+   decl file = 00000001
+   decl line = 00000173
+   type = REF 00003A8A
+ ARRAY TYPE [00003A8A]
+  type = REF 00003A60
+  sibling = REF 00003A9A
+  SUBRANGE TYPE [00003A93]
+   type = REF 00003A9A
+   upper bound = 00000001
+ BASE TYPE [00003A9A]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00003A9D]
+  byte size = 00000008
+  decl file = 00000001
+  decl line = 00000165
+  sibling = REF 00003AE3
+  MEMBER [00003AA6]
+   name = "class"
+   decl file = 00000001
+   decl line = 00000167
+   type = REF 00003A1C
+   data member location (2 bytes) = +0 
+  MEMBER [00003AB5]
+   name = "sign"
+   decl file = 00000001
+   decl line = 00000168
+   type = REF 00003AE3
+   data member location (2 bytes) = +1 
+  MEMBER [00003AC4]
+   name = "normal_exp"
+   decl file = 00000001
+   decl line = 00000169
+   type = REF 00003AEA
+   data member location (2 bytes) = +2 
+  MEMBER [00003AD3]
+   name = "fraction"
+   decl file = 00000001
+   decl line = 00000174
+   type = REF 00003A6B
+   data member location (2 bytes) = +4 
+ BASE TYPE [00003AE3]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00003AEA]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003AF1]
+  name = "fp_number_type"
+  decl file = 00000001
+  decl line = 00000175
+  type = REF 00003A9D
+ VARIABLE [00003AFD]
+  name = "__thenan_sf"
+  decl file = 00000002
+  decl line = 00000088
+  type = REF 00003B0F
+  external = 00000001
+  location (5 bytes) = 00800062 
+ CONST TYPE [00003B0F]
+  type = REF 00003AF1
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [00003B20]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000DA8]
+ high pc = [00000E92]
+ statement list = 0000119E
+ BASE TYPE [00003B3A]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00003B41]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003B48]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00003B4F]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00003B5A
+ BASE TYPE [00003B5A]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00003B61]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003B68]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 00003B73
+ BASE TYPE [00003B73]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00003B7A]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 00003B85
+ BASE TYPE [00003B85]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00003B8C]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00003B7A
+ TYPEDEF [00003B97]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003B68
+ TYPEDEF [00003BA2]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00003B4F
+ ENUMERATION TYPE [00003BAD]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 00003BD5
+  ENUMERATOR [00003BB6]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [00003BBC]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [00003BC2]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00003BC8]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00003BCE]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [00003BD5]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 00003BF4
+  MEMBER [00003BDE]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 00003B8C
+  MEMBER [00003BE9]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 00003BF4
+ ARRAY TYPE [00003BF4]
+  type = REF 00003B97
+  sibling = REF 00003C04
+  SUBRANGE TYPE [00003BFD]
+   type = REF 00003C04
+   upper bound = 00000001
+ BASE TYPE [00003C04]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00003C07]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00003C4D
+  MEMBER [00003C10]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00003B48
+   data member location (2 bytes) = +0 
+  MEMBER [00003C1F]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00003C4D
+   data member location (2 bytes) = +1 
+  MEMBER [00003C2E]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 00003C54
+   data member location (2 bytes) = +2 
+  MEMBER [00003C3D]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 00003BD5
+   data member location (2 bytes) = +4 
+ BASE TYPE [00003C4D]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00003C54]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003C5B]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00003C07
+ SUBPROGRAM [00003C67]
+  name = "clzusi"
+  decl file = 00000001
+  decl line = 000000C6
+  prototyped = 00000001
+  type = REF 00003B41
+  inline = 00000003
+  sibling = REF 00003C82
+  FORMAL PARAMETER [00003C78]
+   name = "n"
+   decl file = 00000001
+   decl line = 000000C5
+   type = REF 00003B7A
+ SUBPROGRAM [00003C82]
+  external = 00000001
+  name = "__floatunsisf"
+  decl file = 00000001
+  decl line = 0000056F
+  prototyped = 00000001
+  type = REF 00003BA2
+  low pc = [00000DA8]
+  high pc = [00000E92]
+  frame base (2 bytes) = R32 
+  sibling = REF 00003D08
+  FORMAL PARAMETER [00003C9F]
+   name = "arg_a"
+   decl file = 00000001
+   decl line = 0000056E
+   type = REF 00003B7A
+   location = 000008CA
+  VARIABLE [00003CAF]
+   name = "in"
+   decl file = 00000001
+   decl line = 00000570
+   type = REF 00003C5B
+   location (2 bytes) = [R28]+1 
+  LEXICAL BLOCK [00003CBD]
+   low pc = [00000DC6]
+   high pc = [00000E84]
+   VARIABLE [00003CC6]
+    name = "shift"
+    decl file = 00000001
+    decl line = 00000579
+    type = REF 00003B41
+    location = 000008FE
+   INLINED SUBROUTINE [00003CD6]
+    abstract origin = REF 00003C67
+    low pc = [00000DDC]
+    high pc = [00000DE2]
+    unknown 58 = 00000001
+    unknown 59 = 0000057E
+    sibling = REF 00003CF0
+    FORMAL PARAMETER [00003CEA]
+     abstract origin = REF 00003C78
+   LEXICAL BLOCK [00003CF0]
+    low pc = [00000DEA]
+    high pc = [00000E60]
+    VARIABLE [00003CF9]
+     name = "guard"
+     decl file = 00000001
+     decl line = 00000581
+     type = REF 00003B8C
+ VARIABLE [00003D08]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 00003D15
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [00003D15]
+  type = REF 00003C5B
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [00003D26]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../../../gcc-4.3.3/libgcc/../gcc/libgcc2.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000E92]
+ high pc = [00000F30]
+ statement list = 000012D1
+ BASE TYPE [00003D40]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003D47]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [00003D4E]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ BASE TYPE [00003D55]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ TYPEDEF [00003D5C]
+  name = "UQItype"
+  decl file = 00000002
+  decl line = 0000008C
+  type = REF 00003D67
+ BASE TYPE [00003D67]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ TYPEDEF [00003D6E]
+  name = "SItype"
+  decl file = 00000002
+  decl line = 00000091
+  type = REF 00003D79
+ BASE TYPE [00003D79]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003D80]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000092
+  type = REF 00003D8B
+ BASE TYPE [00003D8B]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [00003D92]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [00003D99]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ BASE TYPE [00003DA0]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00003DA7]
+  byte size = 00000008
+  encoding = 00000003
+  name = "complex float"
+ SUBPROGRAM [00003DAE]
+  external = 00000001
+  name = "__clzsi2"
+  decl file = 00000001
+  decl line = 000002CA
+  prototyped = 00000001
+  type = REF 00003D40
+  low pc = [00000E92]
+  high pc = [00000F30]
+  frame base (2 bytes) = R32 
+  sibling = REF 00003E0C
+  FORMAL PARAMETER [00003DCB]
+   name = "x"
+   decl file = 00000001
+   decl line = 000002C9
+   type = REF 00003D80
+   location = 00000916
+  VARIABLE [00003DD9]
+   name = "ret"
+   decl file = 00000001
+   decl line = 000002CB
+   type = REF 00003D6E
+  LEXICAL BLOCK [00003DE5]
+   low pc = [00000E9E]
+   high pc = [00000F24]
+   VARIABLE [00003DEE]
+    name = "__xr"
+    decl file = 00000001
+    decl line = 000002CD
+    type = REF 00003D80
+   VARIABLE [00003DFA]
+    name = "__a"
+    decl file = 00000001
+    decl line = 000002CD
+    type = REF 00003D80
+    location = 0000094A
+ ARRAY TYPE [00003E0C]
+  type = REF 00003D5C
+  sibling = REF 00003E1C
+  SUBRANGE TYPE [00003E15]
+   type = REF 00003E1C
+   upper bound = 000000FF
+ BASE TYPE [00003E1C]
+  byte size = 00000002
+  encoding = 00000007
+ VARIABLE [00003E1F]
+  name = "__clz_tab"
+  decl file = 00000003
+  decl line = 0000003A
+  type = REF 00003E2C
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [00003E2C]
+  type = REF 00003E0C
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc'
+COMPILE UNIT [00003E3D]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [00000F30]
+ high pc = [000010DA]
+ statement list = 00001376
+ BASE TYPE [00003E57]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [00003E5E]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00003E65]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [00003E6C]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00003E77
+ BASE TYPE [00003E77]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [00003E7E]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00003E85]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 00003E90
+ BASE TYPE [00003E90]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00003E97]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 00003EA2
+ BASE TYPE [00003EA2]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00003EA9]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00003E97
+ TYPEDEF [00003EB4]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00003E85
+ TYPEDEF [00003EBF]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 00003E6C
+ ENUMERATION TYPE [00003ECA]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 00003EF2
+  ENUMERATOR [00003ED3]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [00003ED9]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [00003EDF]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [00003EE5]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00003EEB]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [00003EF2]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 00003F11
+  MEMBER [00003EFB]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 00003EA9
+  MEMBER [00003F06]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 00003F11
+ ARRAY TYPE [00003F11]
+  type = REF 00003EB4
+  sibling = REF 00003F21
+  SUBRANGE TYPE [00003F1A]
+   type = REF 00003F21
+   upper bound = 00000001
+ BASE TYPE [00003F21]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00003F24]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00003F6A
+  MEMBER [00003F2D]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00003E65
+   data member location (2 bytes) = +0 
+  MEMBER [00003F3C]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00003F6A
+   data member location (2 bytes) = +1 
+  MEMBER [00003F4B]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 00003F71
+   data member location (2 bytes) = +2 
+  MEMBER [00003F5A]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 00003EF2
+   data member location (2 bytes) = +4 
+ BASE TYPE [00003F6A]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00003F71]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00003F78]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00003F24
+ STRUCTURE TYPE [00003F84]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 00003FC4
+  MEMBER [00003F8D]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 00003EA9
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [00003F9F]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 00003E90
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [00003FB1]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 00003E90
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [00003FC4]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 00003FF2
+  MEMBER [00003FCD]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 00003EBF
+  MEMBER [00003FD9]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 00003EA9
+  MEMBER [00003FE5]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00003F84
+ TYPEDEF [00003FF2]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 00003FC4
+ SUBPROGRAM [00003FFE]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 00003E5E
+  inline = 00000003
+  sibling = REF 00004019
+  FORMAL PARAMETER [0000400F]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 00004019
+ POINTER TYPE [00004019]
+  byte size = 00000002
+  type = REF 00003F78
+ SUBPROGRAM [0000401F]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 00003E5E
+  inline = 00000003
+  sibling = REF 0000403A
+  FORMAL PARAMETER [00004030]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 00004019
+ SUBPROGRAM [0000403A]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 00003E5E
+  inline = 00000003
+  sibling = REF 00004055
+  FORMAL PARAMETER [0000404B]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 00004019
+ SUBPROGRAM [00004055]
+  external = 00000001
+  name = "__pack_f"
+  decl file = 00000001
+  decl line = 000000D7
+  prototyped = 00000001
+  type = REF 00003EBF
+  low pc = [00000F30]
+  high pc = [000010DA]
+  frame base (2 bytes) = R32 
+  sibling = REF 000040FE
+  FORMAL PARAMETER [00004071]
+   name = "src"
+   decl file = 00000001
+   decl line = 000000D6
+   type = REF 00004019
+   location = 000009AA
+  VARIABLE [00004080]
+   name = "dst"
+   decl file = 00000001
+   decl line = 000000D8
+   type = REF 00003FF2
+  VARIABLE [0000408B]
+   name = "fraction"
+   decl file = 00000001
+   decl line = 000000D9
+   type = REF 00003EA9
+   location = 00000A02
+  VARIABLE [0000409A]
+   name = "sign"
+   decl file = 00000001
+   decl line = 000000DA
+   type = REF 00003E5E
+  VARIABLE [000040A5]
+   name = "exp"
+   decl file = 00000001
+   decl line = 000000DB
+   type = REF 00003E5E
+   location = 00000A78
+  INLINED SUBROUTINE [000040B4]
+   abstract origin = REF 00003FFE
+   low pc = [00000F46]
+   high pc = [00000F48]
+   unknown 58 = 00000001
+   unknown 59 = 000000E5
+   sibling = REF 000040CD
+   FORMAL PARAMETER [000040C7]
+    abstract origin = REF 0000400F
+  LEXICAL BLOCK [000040CD]
+   low pc = [00000F8E]
+   high pc = [00001044]
+   VARIABLE [000040D6]
+    name = "shift"
+    decl file = 00000001
+    decl line = 0000010E
+    type = REF 00003E5E
+    location = 00000AC0
+   LEXICAL BLOCK [000040E6]
+    low pc = [00000FA6]
+    high pc = [00000FFA]
+    VARIABLE [000040EF]
+     name = "lowbit"
+     decl file = 00000001
+     decl line = 00000119
+     type = REF 00003E5E
+ VARIABLE [000040FE]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 0000410B
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [0000410B]
+  type = REF 00003F78
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [0000411C]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [000010DA]
+ high pc = [000011CA]
+ statement list = 00001500
+ BASE TYPE [00004136]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [0000413D]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00004144]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ TYPEDEF [0000414B]
+  name = "SFtype"
+  decl file = 00000002
+  decl line = 00000061
+  type = REF 00004156
+ BASE TYPE [00004156]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [0000415D]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [00004164]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 0000416F
+ BASE TYPE [0000416F]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [00004176]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 00004181
+ BASE TYPE [00004181]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [00004188]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 00004176
+ TYPEDEF [00004193]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 00004164
+ TYPEDEF [0000419E]
+  name = "FLO_type"
+  decl file = 00000002
+  decl line = 000000C6
+  type = REF 0000414B
+ ENUMERATION TYPE [000041A9]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 000041D1
+  ENUMERATOR [000041B2]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000041B8]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000041BE]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [000041C4]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [000041CA]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [000041D1]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 000041F0
+  MEMBER [000041DA]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 00004188
+  MEMBER [000041E5]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 000041F0
+ ARRAY TYPE [000041F0]
+  type = REF 00004193
+  sibling = REF 00004200
+  SUBRANGE TYPE [000041F9]
+   type = REF 00004200
+   upper bound = 00000001
+ BASE TYPE [00004200]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [00004203]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00004249
+  MEMBER [0000420C]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00004144
+   data member location (2 bytes) = +0 
+  MEMBER [0000421B]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00004249
+   data member location (2 bytes) = +1 
+  MEMBER [0000422A]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 00004250
+   data member location (2 bytes) = +2 
+  MEMBER [00004239]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 000041D1
+   data member location (2 bytes) = +4 
+ BASE TYPE [00004249]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [00004250]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00004257]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 00004203
+ STRUCTURE TYPE [00004263]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000186
+  sibling = REF 000042A3
+  MEMBER [0000426C]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000187
+   type = REF 00004188
+   byte size = 00000004
+   bit size = 00000017
+   bit offset = 00000009
+   data member location (2 bytes) = +0 
+  MEMBER [0000427E]
+   name = "exp"
+   decl file = 00000002
+   decl line = 00000188
+   type = REF 0000416F
+   byte size = 00000002
+   bit size = 00000008
+   bit offset = 00000001
+   data member location (2 bytes) = +2 
+  MEMBER [00004290]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000189
+   type = REF 0000416F
+   byte size = 00000002
+   bit size = 00000001
+   bit offset = 00000008
+   data member location (2 bytes) = +3 
+ UNION TYPE [000042A3]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000178
+  sibling = REF 000042D1
+  MEMBER [000042AC]
+   name = "value"
+   decl file = 00000002
+   decl line = 00000179
+   type = REF 0000419E
+  MEMBER [000042B8]
+   name = "value_raw"
+   decl file = 00000002
+   decl line = 0000017A
+   type = REF 00004188
+  MEMBER [000042C4]
+   name = "bits"
+   decl file = 00000002
+   decl line = 0000018B
+   type = REF 00004263
+ TYPEDEF [000042D1]
+  name = "FLO_union_type"
+  decl file = 00000002
+  decl line = 000001A0
+  type = REF 000042A3
+ SUBPROGRAM [000042DD]
+  external = 00000001
+  name = "__unpack_f"
+  decl file = 00000001
+  decl line = 000001CA
+  prototyped = 00000001
+  low pc = [000010DA]
+  high pc = [000011CA]
+  frame base (2 bytes) = R32 
+  sibling = REF 00004343
+  FORMAL PARAMETER [000042F6]
+   name = "src"
+   decl file = 00000001
+   decl line = 000001C9
+   type = REF 00004343
+   location = 00000AE8
+  FORMAL PARAMETER [00004306]
+   name = "dst"
+   decl file = 00000001
+   decl line = 000001C9
+   type = REF 00004349
+   location = 00000B10
+  VARIABLE [00004316]
+   name = "fraction"
+   decl file = 00000001
+   decl line = 000001CE
+   type = REF 00004188
+   location = 00000B38
+  VARIABLE [00004326]
+   name = "exp"
+   decl file = 00000001
+   decl line = 000001CF
+   type = REF 0000413D
+   location = 00000B6C
+  VARIABLE [00004336]
+   name = "sign"
+   decl file = 00000001
+   decl line = 000001D0
+   type = REF 0000413D
+ POINTER TYPE [00004343]
+  byte size = 00000002
+  type = REF 000042D1
+ POINTER TYPE [00004349]
+  byte size = 00000002
+  type = REF 00004257
+ VARIABLE [0000434F]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 0000435C
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [0000435C]
+  type = REF 00004257
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [0000436D]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../.././gcc/fp-bit.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [000011CA]
+ high pc = [0000127C]
+ statement list = 0000164B
+ BASE TYPE [00004387]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ BASE TYPE [0000438E]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [00004395]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ BASE TYPE [0000439C]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [000043A3]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ TYPEDEF [000043AA]
+  name = "UHItype"
+  decl file = 00000002
+  decl line = 00000074
+  type = REF 000043B5
+ BASE TYPE [000043B5]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ TYPEDEF [000043BC]
+  name = "USItype"
+  decl file = 00000002
+  decl line = 00000075
+  type = REF 000043C7
+ BASE TYPE [000043C7]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ TYPEDEF [000043CE]
+  name = "fractype"
+  decl file = 00000002
+  decl line = 000000C4
+  type = REF 000043BC
+ TYPEDEF [000043D9]
+  name = "halffractype"
+  decl file = 00000002
+  decl line = 000000C5
+  type = REF 000043AA
+ ENUMERATION TYPE [000043E4]
+  byte size = 00000002
+  decl file = 00000002
+  decl line = 0000015C
+  sibling = REF 0000440C
+  ENUMERATOR [000043ED]
+   name = "CLASS_SNAN"
+   const value = 00000000
+  ENUMERATOR [000043F3]
+   name = "CLASS_QNAN"
+   const value = 00000001
+  ENUMERATOR [000043F9]
+   name = "CLASS_ZERO"
+   const value = 00000002
+  ENUMERATOR [000043FF]
+   name = "CLASS_NUMBER"
+   const value = 00000003
+  ENUMERATOR [00004405]
+   name = "CLASS_INFINITY"
+   const value = 00000004
+ UNION TYPE [0000440C]
+  byte size = 00000004
+  decl file = 00000002
+  decl line = 00000171
+  sibling = REF 0000442B
+  MEMBER [00004415]
+   name = "ll"
+   decl file = 00000002
+   decl line = 00000172
+   type = REF 000043CE
+  MEMBER [00004420]
+   name = "l"
+   decl file = 00000002
+   decl line = 00000173
+   type = REF 0000442B
+ ARRAY TYPE [0000442B]
+  type = REF 000043D9
+  sibling = REF 0000443B
+  SUBRANGE TYPE [00004434]
+   type = REF 0000443B
+   upper bound = 00000001
+ BASE TYPE [0000443B]
+  byte size = 00000002
+  encoding = 00000007
+ STRUCTURE TYPE [0000443E]
+  byte size = 00000008
+  decl file = 00000002
+  decl line = 00000165
+  sibling = REF 00004484
+  MEMBER [00004447]
+   name = "class"
+   decl file = 00000002
+   decl line = 00000167
+   type = REF 00004395
+   data member location (2 bytes) = +0 
+  MEMBER [00004456]
+   name = "sign"
+   decl file = 00000002
+   decl line = 00000168
+   type = REF 00004484
+   data member location (2 bytes) = +1 
+  MEMBER [00004465]
+   name = "normal_exp"
+   decl file = 00000002
+   decl line = 00000169
+   type = REF 0000448B
+   data member location (2 bytes) = +2 
+  MEMBER [00004474]
+   name = "fraction"
+   decl file = 00000002
+   decl line = 00000174
+   type = REF 0000440C
+   data member location (2 bytes) = +4 
+ BASE TYPE [00004484]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [0000448B]
+  byte size = 00000002
+  encoding = 00000005
+  name = "short int"
+ TYPEDEF [00004492]
+  name = "fp_number_type"
+  decl file = 00000002
+  decl line = 00000175
+  type = REF 0000443E
+ SUBPROGRAM [0000449E]
+  name = "isnan"
+  decl file = 00000001
+  decl line = 000000A6
+  prototyped = 00000001
+  type = REF 0000438E
+  inline = 00000003
+  sibling = REF 000044B9
+  FORMAL PARAMETER [000044AF]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000A5
+   type = REF 000044B9
+ POINTER TYPE [000044B9]
+  byte size = 00000002
+  type = REF 00004492
+ SUBPROGRAM [000044BF]
+  name = "isinf"
+  decl file = 00000001
+  decl line = 000000AE
+  prototyped = 00000001
+  type = REF 0000438E
+  inline = 00000003
+  sibling = REF 000044DA
+  FORMAL PARAMETER [000044D0]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000AD
+   type = REF 000044B9
+ SUBPROGRAM [000044DA]
+  name = "iszero"
+  decl file = 00000001
+  decl line = 000000B7
+  prototyped = 00000001
+  type = REF 0000438E
+  inline = 00000003
+  sibling = REF 000044F5
+  FORMAL PARAMETER [000044EB]
+   name = "x"
+   decl file = 00000001
+   decl line = 000000B6
+   type = REF 000044B9
+ SUBPROGRAM [000044F5]
+  external = 00000001
+  name = "__fpcmp_parts_f"
+  decl file = 00000001
+  decl line = 0000044F
+  prototyped = 00000001
+  type = REF 0000438E
+  low pc = [000011CA]
+  high pc = [0000127C]
+  frame base (2 bytes) = R32 
+  sibling = REF 0000455F
+  FORMAL PARAMETER [00004512]
+   name = "a"
+   decl file = 00000001
+   decl line = 0000044E
+   type = REF 000044B9
+   location = 00000B94
+  FORMAL PARAMETER [00004520]
+   name = "b"
+   decl file = 00000001
+   decl line = 0000044E
+   type = REF 000044B9
+   location = 00000BBC
+  INLINED SUBROUTINE [0000452E]
+   abstract origin = REF 0000449E
+   low pc = [000011D0]
+   high pc = [000011D2]
+   unknown 58 = 00000001
+   unknown 59 = 00000458
+   sibling = REF 00004548
+   FORMAL PARAMETER [00004542]
+    abstract origin = REF 000044AF
+  INLINED SUBROUTINE [00004548]
+   abstract origin = REF 0000449E
+   low pc = [000011D8]
+   high pc = [000011DA]
+   unknown 58 = 00000001
+   unknown 59 = 00000458
+   FORMAL PARAMETER [00004558]
+    abstract origin = REF 000044AF
+ VARIABLE [0000455F]
+  name = "__thenan_sf"
+  decl file = 00000001
+  decl line = 00000090
+  type = REF 0000456C
+  external = 00000001
+  declaration = 00000001
+ CONST TYPE [0000456C]
+  type = REF 00004492
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc\config'
+[LINE] Include dir: '..\..\..\.\gcc'
+COMPILE UNIT [0000457D]
+ producer = "GNU C 4.3.3"
+ language = 00000001
+ name = "../../../../gcc-4.3.3/libgcc/../gcc/libgcc2.c"
+ comp dir = "c:\avrdev\gcc\build-avr\avr\avr4\libgcc"
+ low pc = [0000127C]
+ high pc = [0000127C]
+ statement list = 00001782
+ BASE TYPE [00004597]
+  byte size = 00000002
+  encoding = 00000005
+  name = "int"
+ BASE TYPE [0000459E]
+  byte size = 00000002
+  encoding = 00000007
+  name = "unsigned int"
+ BASE TYPE [000045A5]
+  byte size = 00000001
+  encoding = 00000006
+  name = "char"
+ BASE TYPE [000045AC]
+  byte size = 00000001
+  encoding = 00000006
+  name = "signed char"
+ TYPEDEF [000045B3]
+  name = "UQItype"
+  decl file = 00000001
+  decl line = 0000008C
+  type = REF 000045BE
+ BASE TYPE [000045BE]
+  byte size = 00000001
+  encoding = 00000008
+  name = "unsigned char"
+ BASE TYPE [000045C5]
+  byte size = 00000004
+  encoding = 00000005
+  name = "long int"
+ BASE TYPE [000045CC]
+  byte size = 00000004
+  encoding = 00000007
+  name = "long unsigned int"
+ BASE TYPE [000045D3]
+  byte size = 00000008
+  encoding = 00000005
+  name = "long long int"
+ BASE TYPE [000045DA]
+  byte size = 00000008
+  encoding = 00000007
+  name = "long long unsigned int"
+ BASE TYPE [000045E1]
+  byte size = 00000004
+  encoding = 00000004
+  name = "float"
+ BASE TYPE [000045E8]
+  byte size = 00000008
+  encoding = 00000003
+  name = "complex float"
+ ARRAY TYPE [000045EF]
+  type = REF 000045B3
+  sibling = REF 000045FF
+  SUBRANGE TYPE [000045F8]
+   type = REF 000045FF
+   upper bound = 000000FF
+ BASE TYPE [000045FF]
+  byte size = 00000002
+  encoding = 00000007
+ VARIABLE [00004602]
+  name = "__clz_tab"
+  decl file = 00000002
+  decl line = 000002B9
+  type = REF 00004615
+  external = 00000001
+  location (5 bytes) = 0080006A 
+ CONST TYPE [00004615]
+  type = REF 000045EF
+
+[LINE] Include dir: '..\..\..\..\gcc-4.3.3\libgcc\..\gcc'
+Loading Variable 'secs'.
+Warning: Entry with reference '8163' not found.
+Warning: Entry with reference '8168' not found.
+BASE TYPE 'float' : loc=00001FE8, type = 6, format = 5, size=4
+Loading Variable 'over_flow'.
+Warning: Entry with reference '8193' not found.
+Warning: Entry with reference '7628' not found.
+Warning: Entry with reference '7639' not found.
+BASE TYPE 'unsigned int' : loc=00001DD7, type = 3, format = 4, size=2
+Loading Variable 'trig_val'.
+Warning: Entry with reference '7603' not found.
+Warning: Entry with reference '7614' not found.
+BASE TYPE 'unsigned char' : loc=00001DBE, type = 2, format = 6, size=1
+Loading Variable 'flag'.
+Warning: Entry with reference '8234' not found.
+Warning: Entry with reference '7674' not found.
+BASE TYPE 'char' : loc=00001DFA, type = 2, format = 6, size=1
+Loading Variable 'a'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Warning: Entry with reference '9068' not found.
+BASE TYPE 'char' : loc=0000236C, type = 2, format = 6, size=1
+Warning: Entry with reference '9351' not found.
+BASE TYPE 'unsigned char' : loc=00002487, type = 2, format = 6, size=1
+Warning: Entry with reference '9358' not found.
+BASE TYPE 'short int' : loc=0000248E, type = 3, format = 3, size=2
+Warning: Entry with reference '9231' not found.
+Warning: Entry with reference '9147' not found.
+Warning: Entry with reference '9129' not found.
+Warning: Entry with reference '9140' not found.
+BASE TYPE 'long unsigned int' : loc=000023B4, type = 4, format = 4, size=4
+Warning: Entry with reference '9262' not found.
+Warning: Entry with reference '9158' not found.
+Warning: Entry with reference '9111' not found.
+Warning: Entry with reference '9122' not found.
+BASE TYPE 'unsigned int' : loc=000023A2, type = 3, format = 4, size=2
+Loading Variable 'b'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Loading Variable 'tmp'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '9487' not found.
+Warning: Entry with reference '9441' not found.
+Warning: Entry with reference '9169' not found.
+Warning: Entry with reference '9075' not found.
+Warning: Entry with reference '9086' not found.
+BASE TYPE 'float' : loc=0000237E, type = 6, format = 5, size=4
+Warning: Entry with reference '9147' not found.
+Warning: Entry with reference '9129' not found.
+Warning: Entry with reference '9140' not found.
+BASE TYPE 'long unsigned int' : loc=000023B4, type = 4, format = 4, size=4
+Warning: Entry with reference '9377' not found.
+Warning: Entry with reference '9147' not found.
+Warning: Entry with reference '9129' not found.
+Warning: Entry with reference '9140' not found.
+BASE TYPE 'long unsigned int' : loc=000023B4, type = 4, format = 4, size=4
+Warning: Entry with reference '9122' not found.
+BASE TYPE 'unsigned int' : loc=000023A2, type = 3, format = 4, size=2
+Warning: Entry with reference '9122' not found.
+BASE TYPE 'unsigned int' : loc=000023A2, type = 3, format = 4, size=2
+Loading Variable 'bu'.
+Warning: Entry with reference '9487' not found.
+Warning: Entry with reference '9441' not found.
+Loading Variable 'a'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Loading Variable 'b'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Loading Variable 'tmp'.
+Warning: Entry with reference '9365' not found.
+Warning: Entry with reference '9281' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '9487' not found.
+Warning: Entry with reference '9441' not found.
+Loading Variable 'bu'.
+Warning: Entry with reference '9487' not found.
+Warning: Entry with reference '9441' not found.
+Loading Variable 'a'.
+Warning: Entry with reference '10489' not found.
+Warning: Entry with reference '10405' not found.
+Warning: Entry with reference '10214' not found.
+BASE TYPE 'char' : loc=000027E6, type = 2, format = 6, size=1
+Warning: Entry with reference '10475' not found.
+BASE TYPE 'unsigned char' : loc=000028EB, type = 2, format = 6, size=1
+Warning: Entry with reference '10482' not found.
+BASE TYPE 'short int' : loc=000028F2, type = 3, format = 3, size=2
+Warning: Entry with reference '10355' not found.
+Warning: Entry with reference '10282' not found.
+Warning: Entry with reference '10264' not found.
+Warning: Entry with reference '10275' not found.
+BASE TYPE 'long unsigned int' : loc=00002823, type = 4, format = 4, size=4
+Warning: Entry with reference '10386' not found.
+Warning: Entry with reference '10293' not found.
+Warning: Entry with reference '10246' not found.
+Warning: Entry with reference '10257' not found.
+BASE TYPE 'unsigned int' : loc=00002811, type = 3, format = 4, size=2
+Loading Variable 'b'.
+Warning: Entry with reference '10489' not found.
+Warning: Entry with reference '10405' not found.
+Loading Variable 'tmp'.
+Warning: Entry with reference '10489' not found.
+Warning: Entry with reference '10405' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '10611' not found.
+Warning: Entry with reference '10565' not found.
+Warning: Entry with reference '10304' not found.
+Warning: Entry with reference '10221' not found.
+Warning: Entry with reference '10232' not found.
+BASE TYPE 'float' : loc=000027F8, type = 6, format = 5, size=4
+Warning: Entry with reference '10282' not found.
+Warning: Entry with reference '10264' not found.
+Warning: Entry with reference '10275' not found.
+BASE TYPE 'long unsigned int' : loc=00002823, type = 4, format = 4, size=4
+Warning: Entry with reference '10501' not found.
+Warning: Entry with reference '10282' not found.
+Warning: Entry with reference '10264' not found.
+Warning: Entry with reference '10275' not found.
+BASE TYPE 'long unsigned int' : loc=00002823, type = 4, format = 4, size=4
+Warning: Entry with reference '10257' not found.
+BASE TYPE 'unsigned int' : loc=00002811, type = 3, format = 4, size=2
+Warning: Entry with reference '10257' not found.
+BASE TYPE 'unsigned int' : loc=00002811, type = 3, format = 4, size=2
+Loading Variable 'bu'.
+Warning: Entry with reference '10611' not found.
+Warning: Entry with reference '10565' not found.
+Loading Variable 'a'.
+Warning: Entry with reference '11646' not found.
+Warning: Entry with reference '11562' not found.
+Warning: Entry with reference '11371' not found.
+BASE TYPE 'char' : loc=00002C6B, type = 2, format = 6, size=1
+Warning: Entry with reference '11632' not found.
+BASE TYPE 'unsigned char' : loc=00002D70, type = 2, format = 6, size=1
+Warning: Entry with reference '11639' not found.
+BASE TYPE 'short int' : loc=00002D77, type = 3, format = 3, size=2
+Warning: Entry with reference '11512' not found.
+Warning: Entry with reference '11439' not found.
+Warning: Entry with reference '11421' not found.
+Warning: Entry with reference '11432' not found.
+BASE TYPE 'long unsigned int' : loc=00002CA8, type = 4, format = 4, size=4
+Warning: Entry with reference '11543' not found.
+Warning: Entry with reference '11450' not found.
+Warning: Entry with reference '11403' not found.
+Warning: Entry with reference '11414' not found.
+BASE TYPE 'unsigned int' : loc=00002C96, type = 3, format = 4, size=2
+Loading Variable 'b'.
+Warning: Entry with reference '11646' not found.
+Warning: Entry with reference '11562' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '11768' not found.
+Warning: Entry with reference '11722' not found.
+Warning: Entry with reference '11461' not found.
+Warning: Entry with reference '11378' not found.
+Warning: Entry with reference '11389' not found.
+BASE TYPE 'float' : loc=00002C7D, type = 6, format = 5, size=4
+Warning: Entry with reference '11439' not found.
+Warning: Entry with reference '11421' not found.
+Warning: Entry with reference '11432' not found.
+BASE TYPE 'long unsigned int' : loc=00002CA8, type = 4, format = 4, size=4
+Warning: Entry with reference '11658' not found.
+Warning: Entry with reference '11439' not found.
+Warning: Entry with reference '11421' not found.
+Warning: Entry with reference '11432' not found.
+BASE TYPE 'long unsigned int' : loc=00002CA8, type = 4, format = 4, size=4
+Warning: Entry with reference '11414' not found.
+BASE TYPE 'unsigned int' : loc=00002C96, type = 3, format = 4, size=2
+Warning: Entry with reference '11414' not found.
+BASE TYPE 'unsigned int' : loc=00002C96, type = 3, format = 4, size=2
+Loading Variable 'bu'.
+Warning: Entry with reference '11768' not found.
+Warning: Entry with reference '11722' not found.
+Loading Variable 'a'.
+Warning: Entry with reference '12677' not found.
+Warning: Entry with reference '12593' not found.
+Warning: Entry with reference '12402' not found.
+BASE TYPE 'char' : loc=00003072, type = 2, format = 6, size=1
+Warning: Entry with reference '12663' not found.
+BASE TYPE 'unsigned char' : loc=00003177, type = 2, format = 6, size=1
+Warning: Entry with reference '12670' not found.
+BASE TYPE 'short int' : loc=0000317E, type = 3, format = 3, size=2
+Warning: Entry with reference '12543' not found.
+Warning: Entry with reference '12470' not found.
+Warning: Entry with reference '12452' not found.
+Warning: Entry with reference '12463' not found.
+BASE TYPE 'long unsigned int' : loc=000030AF, type = 4, format = 4, size=4
+Warning: Entry with reference '12574' not found.
+Warning: Entry with reference '12481' not found.
+Warning: Entry with reference '12434' not found.
+Warning: Entry with reference '12445' not found.
+BASE TYPE 'unsigned int' : loc=0000309D, type = 3, format = 4, size=2
+Loading Variable 'b'.
+Warning: Entry with reference '12677' not found.
+Warning: Entry with reference '12593' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '12799' not found.
+Warning: Entry with reference '12753' not found.
+Warning: Entry with reference '12492' not found.
+Warning: Entry with reference '12409' not found.
+Warning: Entry with reference '12420' not found.
+BASE TYPE 'float' : loc=00003084, type = 6, format = 5, size=4
+Warning: Entry with reference '12470' not found.
+Warning: Entry with reference '12452' not found.
+Warning: Entry with reference '12463' not found.
+BASE TYPE 'long unsigned int' : loc=000030AF, type = 4, format = 4, size=4
+Warning: Entry with reference '12689' not found.
+Warning: Entry with reference '12470' not found.
+Warning: Entry with reference '12452' not found.
+Warning: Entry with reference '12463' not found.
+BASE TYPE 'long unsigned int' : loc=000030AF, type = 4, format = 4, size=4
+Warning: Entry with reference '12445' not found.
+BASE TYPE 'unsigned int' : loc=0000309D, type = 3, format = 4, size=2
+Warning: Entry with reference '12445' not found.
+BASE TYPE 'unsigned int' : loc=0000309D, type = 3, format = 4, size=2
+Loading Variable 'bu'.
+Warning: Entry with reference '12799' not found.
+Warning: Entry with reference '12753' not found.
+Loading Variable 'a'.
+Warning: Entry with reference '13316' not found.
+Warning: Entry with reference '13232' not found.
+Warning: Entry with reference '13041' not found.
+BASE TYPE 'char' : loc=000032F1, type = 2, format = 6, size=1
+Warning: Entry with reference '13302' not found.
+BASE TYPE 'unsigned char' : loc=000033F6, type = 2, format = 6, size=1
+Warning: Entry with reference '13309' not found.
+BASE TYPE 'short int' : loc=000033FD, type = 3, format = 3, size=2
+Warning: Entry with reference '13182' not found.
+Warning: Entry with reference '13109' not found.
+Warning: Entry with reference '13091' not found.
+Warning: Entry with reference '13102' not found.
+BASE TYPE 'long unsigned int' : loc=0000332E, type = 4, format = 4, size=4
+Warning: Entry with reference '13213' not found.
+Warning: Entry with reference '13120' not found.
+Warning: Entry with reference '13073' not found.
+Warning: Entry with reference '13084' not found.
+BASE TYPE 'unsigned int' : loc=0000331C, type = 3, format = 4, size=2
+Loading Variable 'b'.
+Warning: Entry with reference '13316' not found.
+Warning: Entry with reference '13232' not found.
+Loading Variable 'au'.
+Warning: Entry with reference '13438' not found.
+Warning: Entry with reference '13392' not found.
+Warning: Entry with reference '13131' not found.
+Warning: Entry with reference '13048' not found.
+Warning: Entry with reference '13059' not found.
+BASE TYPE 'float' : loc=00003303, type = 6, format = 5, size=4
+Warning: Entry with reference '13109' not found.
+Warning: Entry with reference '13091' not found.
+Warning: Entry with reference '13102' not found.
+BASE TYPE 'long unsigned int' : loc=0000332E, type = 4, format = 4, size=4
+Warning: Entry with reference '13328' not found.
+Warning: Entry with reference '13109' not found.
+Warning: Entry with reference '13091' not found.
+Warning: Entry with reference '13102' not found.
+BASE TYPE 'long unsigned int' : loc=0000332E, type = 4, format = 4, size=4
+Warning: Entry with reference '13084' not found.
+BASE TYPE 'unsigned int' : loc=0000331C, type = 3, format = 4, size=2
+Warning: Entry with reference '13084' not found.
+BASE TYPE 'unsigned int' : loc=0000331C, type = 3, format = 4, size=2
+Loading Variable 'bu'.
+Warning: Entry with reference '13438' not found.
+Warning: Entry with reference '13392' not found.
+Loading Variable 'in'.
+Warning: Entry with reference '13955' not found.
+Warning: Entry with reference '13871' not found.
+Warning: Entry with reference '13669' not found.
+BASE TYPE 'char' : loc=00003565, type = 2, format = 6, size=1
+Warning: Entry with reference '13941' not found.
+BASE TYPE 'unsigned char' : loc=00003675, type = 2, format = 6, size=1
+Warning: Entry with reference '13948' not found.
+BASE TYPE 'short int' : loc=0000367C, type = 3, format = 3, size=2
+Warning: Entry with reference '13821' not found.
+Warning: Entry with reference '13748' not found.
+Warning: Entry with reference '13730' not found.
+Warning: Entry with reference '13741' not found.
+BASE TYPE 'long unsigned int' : loc=000035AD, type = 4, format = 4, size=4
+Warning: Entry with reference '13852' not found.
+Warning: Entry with reference '13759' not found.
+Warning: Entry with reference '13712' not found.
+Warning: Entry with reference '13723' not found.
+BASE TYPE 'unsigned int' : loc=0000359B, type = 3, format = 4, size=2
+Loading Variable 'a'.
+Warning: Entry with reference '14474' not found.
+Warning: Entry with reference '14390' not found.
+Warning: Entry with reference '14188' not found.
+BASE TYPE 'char' : loc=0000376C, type = 2, format = 6, size=1
+Warning: Entry with reference '14460' not found.
+BASE TYPE 'unsigned char' : loc=0000387C, type = 2, format = 6, size=1
+Warning: Entry with reference '14467' not found.
+BASE TYPE 'short int' : loc=00003883, type = 3, format = 3, size=2
+Warning: Entry with reference '14340' not found.
+Warning: Entry with reference '14267' not found.
+Warning: Entry with reference '14249' not found.
+Warning: Entry with reference '14260' not found.
+BASE TYPE 'long unsigned int' : loc=000037B4, type = 4, format = 4, size=4
+Warning: Entry with reference '14371' not found.
+Warning: Entry with reference '14278' not found.
+Warning: Entry with reference '14231' not found.
+Warning: Entry with reference '14242' not found.
+BASE TYPE 'unsigned int' : loc=000037A2, type = 3, format = 4, size=2
+Loading Variable 'au'.
+Warning: Entry with reference '14596' not found.
+Warning: Entry with reference '14550' not found.
+Warning: Entry with reference '14289' not found.
+Warning: Entry with reference '14195' not found.
+Warning: Entry with reference '14206' not found.
+BASE TYPE 'float' : loc=0000377E, type = 6, format = 5, size=4
+Warning: Entry with reference '14267' not found.
+Warning: Entry with reference '14249' not found.
+Warning: Entry with reference '14260' not found.
+BASE TYPE 'long unsigned int' : loc=000037B4, type = 4, format = 4, size=4
+Warning: Entry with reference '14486' not found.
+Warning: Entry with reference '14267' not found.
+Warning: Entry with reference '14249' not found.
+Warning: Entry with reference '14260' not found.
+BASE TYPE 'long unsigned int' : loc=000037B4, type = 4, format = 4, size=4
+Warning: Entry with reference '14242' not found.
+BASE TYPE 'unsigned int' : loc=000037A2, type = 3, format = 4, size=2
+Warning: Entry with reference '14242' not found.
+BASE TYPE 'unsigned int' : loc=000037A2, type = 3, format = 4, size=2
+Loading Variable '__thenan_sf'.
+Warning: Entry with reference '15119' not found.
+Warning: Entry with reference '15089' not found.
+Warning: Entry with reference '15005' not found.
+Warning: Entry with reference '14876' not found.
+BASE TYPE 'char' : loc=00003A1C, type = 2, format = 6, size=1
+Warning: Entry with reference '15075' not found.
+BASE TYPE 'unsigned char' : loc=00003AE3, type = 2, format = 6, size=1
+Warning: Entry with reference '15082' not found.
+BASE TYPE 'short int' : loc=00003AEA, type = 3, format = 3, size=2
+Warning: Entry with reference '14955' not found.
+Warning: Entry with reference '14933' not found.
+Warning: Entry with reference '14915' not found.
+Warning: Entry with reference '14926' not found.
+BASE TYPE 'long unsigned int' : loc=00003A4E, type = 4, format = 4, size=4
+Warning: Entry with reference '14986' not found.
+Warning: Entry with reference '14944' not found.
+Warning: Entry with reference '14897' not found.
+Warning: Entry with reference '14908' not found.
+BASE TYPE 'unsigned int' : loc=00003A3C, type = 3, format = 4, size=2
+Loading Variable 'in'.
+Warning: Entry with reference '15451' not found.
+Warning: Entry with reference '15367' not found.
+Warning: Entry with reference '15176' not found.
+BASE TYPE 'char' : loc=00003B48, type = 2, format = 6, size=1
+Warning: Entry with reference '15437' not found.
+BASE TYPE 'unsigned char' : loc=00003C4D, type = 2, format = 6, size=1
+Warning: Entry with reference '15444' not found.
+BASE TYPE 'short int' : loc=00003C54, type = 3, format = 3, size=2
+Warning: Entry with reference '15317' not found.
+Warning: Entry with reference '15244' not found.
+Warning: Entry with reference '15226' not found.
+Warning: Entry with reference '15237' not found.
+BASE TYPE 'long unsigned int' : loc=00003B85, type = 4, format = 4, size=4
+Warning: Entry with reference '15348' not found.
+Warning: Entry with reference '15255' not found.
+Warning: Entry with reference '15208' not found.
+Warning: Entry with reference '15219' not found.
+BASE TYPE 'unsigned int' : loc=00003B73, type = 3, format = 4, size=2
+Loading Variable '__clz_tab'.
+Warning: Entry with reference '17941' not found.
+Warning: Entry with reference '17903' not found.
+Warning: Entry with reference '17843' not found.
+Warning: Entry with reference '17854' not found.
+BASE TYPE 'unsigned char' : loc=000045BE, type = 2, format = 6, size=1
