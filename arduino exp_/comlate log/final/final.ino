@@ -18,7 +18,37 @@
  * |   Gnd   |   GND   |    ---------------------
  * ---------------------
  * Note: You need not obligatorily use the pins defined above
+ 
+ **front 
+ *trig 2
+ *echo 3
+ 
+ **right 
+ *trig 4
+ *echo 5
+ 
+ **left 
+ *trig 6
+ *echo 7
+ 
+ 
+**ENA 9
+**ENB 10
+
+
+IN1 11
+IN2 12
+
+IN3 13
+IN4 8
+ 
 */
+
+
+
+
+
+
 #include <Ultrasonic.h>
 
 /*
@@ -26,6 +56,15 @@
  * or only the signal pin (for sensors 3 pins), like:
  * Ultrasonic ultrasonic(13);
  */
+
+
+const int in1   = 11;  // right motor 
+const int in2   = 12;  // right motor 
+const int in3   = 13;  // left motor 
+const int in4   = 8; // left motor 
+const int speed1= 9;  // right motor 
+const int speed2= 10;  // left motor 
+
 
 const int special = 10 ; 
 
@@ -49,6 +88,71 @@ bool turn = 0;
 #define left_maze 1
 
 bool pair_high = 0;
+
+
+
+
+  void stopall(){
+    digitalWrite(in1,HIGH);
+    digitalWrite(in2,HIGH);
+
+    digitalWrite(in3,HIGH);
+    digitalWrite(in4,HIGH);
+
+    analogWrite(speed1,0);
+    analogWrite(speed2, 0);
+  
+  }
+
+ void motor_forword(){
+    
+    digitalWrite(in1,HIGH);
+    digitalWrite(in2,LOW);
+
+    digitalWrite(in3,HIGH);
+    digitalWrite(in4,LOW);
+
+    analogWrite(speed1,255);
+    analogWrite(speed2, 255);
+  
+  }
+
+ void motor_left(){
+
+    digitalWrite(in1,HIGH);
+    digitalWrite(in2,LOW);
+
+    digitalWrite(in3,LOW);
+    digitalWrite(in4,HIGH);
+
+    analogWrite(speed1,255);
+    analogWrite(speed2, 255);
+
+
+  }
+
+  void motor_right(){
+
+    analogWrite(in2&in3,HIGH);
+    analogWrite(in1&in4,LOW);
+    analogWrite(speed1&speed2,125);
+
+    digitalWrite(in1,LOW);
+    digitalWrite(in2,HIGH);
+
+    digitalWrite(in3,HIGH);
+    digitalWrite(in4,LOW);
+
+    analogWrite(speed1,255);
+    analogWrite(speed2, 255);
+
+
+
+    }
+ 
+
+
+
 
 
 void read(){
@@ -87,20 +191,17 @@ void read(){
 
 void go_forward(){
   //two motors high;
-  digitalWrite(8,1);
-  digitalWrite(9,1);
+  go_forward();
 }
 
 void turn_right(){
   //turn right
-  digitalWrite(9,1);
-  digitalWrite(8,0);
+  motor_right();
 }
 
 void turn_left(){
   //right
-  digitalWrite(8,1);
-  digitalWrite(9,0);
+ motor_left();
 }
 
 void setup() {
@@ -110,6 +211,12 @@ void setup() {
   pinMode(8,1);      //led
   pinMode(9,1);          //led
   pinMode(10,1);
+  pinMode(in1,1);
+  pinMode(in2,1);
+  pinMode(in3,1);
+  pinMode(in4,1);
+  pinMode(speed1,1);
+  pinMode(speed2,1);
 
   
 }
@@ -124,7 +231,7 @@ void loop() {
   Serial.print("\t");
   Serial.println(ultra_left);
 
-
+/*
 
   if (c>0 && pair_high){   //enter after first check of maze type
     switch(turn){
@@ -165,7 +272,7 @@ if (~pair_high)
   if (c==0){    //check maze default turn
     turn = right_maze;
     c++;
-  }
+    }
     
   }
 
@@ -174,10 +281,16 @@ if (~pair_high)
   if (c==0){  //check maze default turn
     turn = left_maze;
     c++;
-  }
+     }
   
   }
   
+  else{
+    stopall();
+    }
   }
 
+*/
+delay(100);
 }
+
