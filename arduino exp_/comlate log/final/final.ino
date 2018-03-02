@@ -133,10 +133,7 @@ bool pair_high = 0;
 
   void motor_right(){
 
-    analogWrite(in2&in3,HIGH);
-    analogWrite(in1&in4,LOW);
-    analogWrite(speed1&speed2,125);
-
+   
     digitalWrite(in1,LOW);
     digitalWrite(in2,HIGH);
 
@@ -191,7 +188,7 @@ void read(){
 
 void go_forward(){
   //two motors high;
-  go_forward();
+  motor_forword();
 }
 
 void turn_right(){
@@ -208,9 +205,6 @@ void setup() {
   Serial.begin(9600);
   Serial.println("1\t2\t3");
 
-  pinMode(8,1);      //led
-  pinMode(9,1);          //led
-  pinMode(10,1);
   pinMode(in1,1);
   pinMode(in2,1);
   pinMode(in3,1);
@@ -231,7 +225,6 @@ void loop() {
   Serial.print("\t");
   Serial.println(ultra_left);
 
-/*
 
   if (c>0 && pair_high){   //enter after first check of maze type
     switch(turn){
@@ -274,7 +267,7 @@ if (~pair_high)
     c++;
     }
     
-  }
+    }
 
   else if(left){
     turn_left();
@@ -290,7 +283,9 @@ if (~pair_high)
     }
   }
 
-*/
+
 delay(100);
 }
+
+
 
