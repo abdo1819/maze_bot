@@ -49,7 +49,7 @@ IN4 8
 
 
 
-#include <Ultrasonic.h>
+#include "Ultrasonic.h"
 
 /*
  * Pass as a parameter the trigger and echo pin, respectively,
@@ -58,15 +58,17 @@ IN4 8
  */
 
 
-const int in1   = 11;  // right motor 
-const int in2   = 12;  // right motor 
-const int in3   = 13;  // left motor 
-const int in4   = 8; // left motor 
-const int speed1= 9;  // right motor 
-const int speed2= 10;  // left motor 
+const int in1   = 13;  // right motor11 
+const int in2   = 8;  // right motor 12
+const int in3   = 11;  // left motor 
+const int in4   = 12; // left motor 
+const int speed1= 10;  // right motor 
+const int speed2= 9;  // left motor 
 
 
 const int special = 10 ; 
+const int no_forward = 20;
+int speed = 120;
 
 
 Ultrasonic ultrasonic1(2, 3);
@@ -93,11 +95,11 @@ bool pair_high = 0;
 
 
   void stopall(){
-    digitalWrite(in1,HIGH);
-    digitalWrite(in2,HIGH);
+    digitalWrite(in1,LOW);
+    digitalWrite(in2,LOW);
 
-    digitalWrite(in3,HIGH);
-    digitalWrite(in4,HIGH);
+    digitalWrite(in3,LOW);
+    digitalWrite(in4,LOW);
 
     analogWrite(speed1,0);
     analogWrite(speed2, 0);
@@ -112,8 +114,8 @@ bool pair_high = 0;
     digitalWrite(in3,HIGH);
     digitalWrite(in4,LOW);
 
-    analogWrite(speed1,255);
-    analogWrite(speed2, 255);
+    analogWrite(speed1,speed);
+    analogWrite(speed2,speed);
   
   }
 
@@ -125,7 +127,7 @@ bool pair_high = 0;
     digitalWrite(in3,LOW);
     digitalWrite(in4,HIGH);
 
-    analogWrite(speed1,255);
+    analogWrite(speed1,speed);
     analogWrite(speed2, 255);
 
 
@@ -141,7 +143,7 @@ bool pair_high = 0;
     digitalWrite(in4,LOW);
 
     analogWrite(speed1,255);
-    analogWrite(speed2, 255);
+    analogWrite(speed2, speed);
 
 
 
@@ -153,9 +155,21 @@ bool pair_high = 0;
 
 
 void read(){
+  
+/*	int old_front =ultra_front ;  
+	int old_right =ultra_right ;  
+	int old_left =ultra_left ;  
+
+
+	//TODO check reading twice
+
+
+*/
   ultra_front = ultrasonic1.distanceRead();
   ultra_right = ultrasonic2.distanceRead();
   ultra_left = ultrasonic3.distanceRead();
+
+
 
   if (ultra_front > special ){
     front = 1;  
@@ -194,11 +208,17 @@ void go_forward(){
 void turn_right(){
   //turn right
   motor_right();
+  delay (1400);
+  motor_forword();
+  delay(800);
 }
 
 void turn_left(){
   //right
  motor_left();
+ delay (1400);
+  motor_forword();
+  delay(800);
 }
 
 void setup() {
@@ -218,13 +238,13 @@ void setup() {
 void loop() {
 
   read();  //read three ultra and 
-
+/*
   Serial.print(ultra_front);
   Serial.print("\t");
   Serial.print(ultra_right);
   Serial.print("\t");
   Serial.println(ultra_left);
-
+*/
 
   if (c>0 && pair_high){   //enter after first check of maze type
     switch(turn){
@@ -253,11 +273,18 @@ void loop() {
     }
   }
   
-if (~pair_high)
+if (~pair_high || c == 0)
   {
   
   if (front){
+    if (ultra_front < 30){
+    	speed = (ultra_front/30) * 70;
+    }
+    else{
+    	speed = 180;
+    }
     go_forward();
+    
   }
 
   else if (right){
@@ -284,7 +311,8 @@ if (~pair_high)
   }
 
 
-delay(100);
+
+
 }
 
 
