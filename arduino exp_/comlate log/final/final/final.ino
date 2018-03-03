@@ -67,8 +67,9 @@ const int speed2= 9;  // left motor
 
 
 const int special = 10 ; 
-const int turnning_time = 1400;
+const int no_forward = 20;
 int speed = 120;
+
 
 Ultrasonic ultrasonic1(2, 3);
 Ultrasonic ultrasonic2(4, 5);
@@ -117,23 +118,6 @@ bool pair_high = 0;
     analogWrite(speed2,speed);
   
   }
-
-
- void motor_forword(){
-    
-    digitalWrite(in1,LOW);
-    digitalWrite(in2,HIGH);
-
-    digitalWrite(in3,LOW);
-    digitalWrite(in4,HIGH);
-
-    analogWrite(speed1,speed);
-    analogWrite(speed2,speed);
-  
-  }
-
-
-
 
  void motor_left(){
 
@@ -216,13 +200,6 @@ void read(){
   }
 }
 
-void deaccelrate(){
-	motor_back();
-	delay(100);
-}
-
-
-
 void go_forward(){
   //two motors high;
   motor_forword();
@@ -230,26 +207,16 @@ void go_forward(){
 
 void turn_right(){
   //turn right
- 
- speed = 100;
-
   motor_right();
-  delay (turnning_time);  
-
-  speed = 180;   //restore speed after turnning
-
+  delay (1400);
   motor_forword();
   delay(800);
 }
 
 void turn_left(){
   //right
- speed = 100;
-
  motor_left();
- delay (turnning_time); 
-
- speed = 180;		//restore speed after turnning
+ delay (1400);
   motor_forword();
   delay(800);
 }
@@ -289,7 +256,7 @@ void loop() {
       }
       else if (left & front)
       {
-        go_forward();  //imossiple sitation
+        turn_left();
       }
       break;
       
@@ -300,7 +267,7 @@ void loop() {
       }
       else if (right & front)
       {
-        go_forward(); //imossiple sitation
+        turn_right();
       }
       break;
     }
@@ -310,14 +277,12 @@ if (~pair_high || c == 0)
   {
   
   if (front){
-    if (ultra_front < 30){   // deaccelrate before turnning
-    	speed = 70 - ((ultra_front/30.0) * 70);
-    	deaccelrate();
+    if (ultra_front < 30){
+    	speed = (ultra_front/30) * 70;
     }
-    else{					//restor default speed
+    else{
     	speed = 180;
     }
-    speed = 70-speed;
     go_forward();
     
   }
